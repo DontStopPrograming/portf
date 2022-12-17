@@ -1,0 +1,1367 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(205, 205, 205);
+}
+
+
+section {
+    width: 99vw;
+    height: 99vh;
+    /* border: 3px solid yellow; */
+}
+
+#sectionOne {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#izq {
+    position: absolute;
+    grid-area: izq;
+    top: 30%;
+    left: 5%;
+    font-family: 'Figtree', sans-serif;
+    font-size: 70px;
+    
+}
+
+
+#izq.mostrartextOne {
+    opacity: 0;
+    transition: 2s linear;    
+}
+
+#imgder{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 120px;
+    left: 60%;
+    background: #fff;
+    
+}
+
+#imgder {
+    grid-area: imgder;
+}
+
+ img#imgder.circle {
+    position: absolute;
+    transition: .5s linear;
+    border-radius:50%;
+    object-fit: content;
+    width: 250px;
+    height: 250px;
+    transform: translate(75%, 580px);
+    background: #fff;
+    
+}
+
+#presentacion {
+    position: absolute;
+    grid-area: presentacion;
+    font-family: 'Figtree', sans-serif;
+    font-size: 6rem;
+    opacity: 0;
+    top: 80%;
+    left: 1%;
+    z-index: 1;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#presentacion.mostrartextTwo {
+    position: absolute;
+    opacity: 1;
+    top: 80%;
+    left: 10%;
+    transition: 3s ease-in-out;
+
+}
+
+#sectionTwo {
+    position: relative;
+    height: 60vh;
+    background: linear-gradient(white, purple);
+}
+
+#uno {
+    opacity: 0;
+}
+
+#skils {
+    opacity: 0;
+}
+
+#centro{
+    position: absolute;
+    opacity: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 6rem;
+    top: 30%;
+    left: 15%;
+}
+
+
+
+#centro.mostrartextThree {
+    opacity: 1;
+    
+    transition: .5 linear;
+}
+
+#sectionTwo.changebackOne {
+    opacity: 1;
+    transition: 2s ease-in-out;
+    /* color: white; */
+}
+
+#sectionThree {
+    position: relative;
+    width: 98vw;
+    height: 50vh;
+    /* animation: letterA 5s ease; */
+}
+
+.ja h1{
+    color: black;
+}
+
+#javascript {
+    position: absolute;
+    font-size: 7rem;
+    top: 1px;
+    right: 55%;
+    opacity: 0;
+ 
+}
+
+#javascript.efectoJ {
+    
+    animation: letterA 1s ease;
+    opacity: 1;
+}
+
+ @keyframes letterA {
+    50%{
+        transform: matrix(80, 2, 3, 80, 5, 6);
+        
+    }
+    
+} 
+
+#css {
+    position: absolute;
+    
+    font-size: 7rem;
+    top: 170px;
+    right: 55%;
+    
+}
+
+#css.efectoC {
+    animation: letterC 3s ease-in-out;
+}
+
+@keyframes letterC {
+    0% {
+        opacity: 0%;
+        
+    }
+    15% {
+        opacity: 50%;
+    }
+    20%{
+        right: 10%;
+    }
+    
+}
+
+#html {
+    position: absolute;
+    
+    font-size: 7rem;
+    top: 320px;
+    right: 55%;
+    
+}
+
+#html.efectoh {
+    animation: letterD 1s ease-in-out;
+}
+
+@keyframes letterD {
+    50%{
+        opacity: 50%;
+        right: 500px;
+    }
+      
+}
+
+
+#subsection.fouranimation {
+    animation: four 1s linear;
+}
+
+@keyframes four {
+    0% {
+        transform: rotate(9.9turn);
+    }
+    
+    
+    
+}
+
+#subsection img {
+    width: 70px;
+    height: 40px;
+    object-fit: contain;
+}
+
+#subsection{
+    position: absolute;
+    object-fit: contain;
+    top: 20%;
+    left: 60%;     
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas: 
+        'node sql scss'
+        'typescript react aws';
+    
+}
+
+#node {
+    grid-area: node;
+}
+
+#sql {
+    grid-area: sql;
+}
+
+
+#scss {
+    grid-area: scss;
+}
+
+#typescript {
+    grid-area: typescript;
+}
+
+#react {
+    grid-area: react;
+}
+
+#aws {
+    grid-area: aws;
+}  
+
+
+#subsection .brig{
+   animation: cod 4s linear infinite;
+}
+
+
+@keyframes cod {
+    50%{
+        filter: brightness(0);
+    }
+}
+
+#subsection .learned {
+    animation: codi 7s linear infinite;
+}
+
+@keyframes codi {
+    50%{
+        filter: brightness(1.90);
+    }
+}
+
+#sectionFour {
+    position: relative;
+    
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'imageTwo about'
+        'imageTwo .';
+    
+}
+
+
+#sectionFour h1 {
+    font-size: 5rem;
+    margin: 2rem;
+    
+}
+
+/* #lin img {
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    width: 150px;
+    height: 150px;
+}
+
+#github img {
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    width: 150px;
+    height: 150px;
+} */
+
+#javas img{
+    width: 50px;
+    height: 10px;
+    object-fit: cover;
+    animation: javass 1s linear ;
+    opacity: 0;
+}
+
+@keyframes javass {
+    0% {
+        opacity: 1;
+        margin-top: 100%;
+        margin-left: 1%;
+    }
+    50% {
+        margin-left: 90%;
+        opacity: 0;
+    }
+ }
+
+
+#carta p {
+    color: purple;
+}
+
+.jscenter{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    opacity: 0;
+    animation: cen 8s linear infinite;
+    
+}
+
+@keyframes cen {
+    0% {
+        opacity: 50%;
+        top: 10%;
+    }
+    20% {
+        opacity: 1;
+        top: 20%;
+        transform: rotate3d(1, 9, 0.5, 9.9rad);
+    }
+    30% {
+        opacity: 1;
+        top: 50%;
+        transform: rotate3d(3, 9, 0.5, 9.9rad);
+    }
+    40% {
+        opacity: 1;
+        top: 50%;
+        transform: rotate3d(6, 9, 0.5, 9.9rad);
+    }
+    50% {
+        opacity: 0;
+        top: 70%;
+        transform: rotate3d(9, 9, 0.5, 5.9rad);
+    }
+    60% {
+        opacity: 0;
+        top: 70%;
+        transform: rotate3d(9, 9, 0.5, 9.9rad);
+    }
+    
+    100% {
+        top: 80%;
+        opacity: 0;
+    } 
+}
+
+.jscenterleft {
+    position: absolute;
+    width: 30px;
+    height:30px;
+    opacity: 0;
+    animation: cenlef 8s linear infinite;
+}
+
+@keyframes cenlef {
+    0% {
+        opacity: 50%;
+        top: 40%;
+        left: 30%;
+    }
+
+    50% {
+        opacity: 1;
+        top: 70%;
+        left: 30%;
+        transform: rotate3d(1, 9, 9.5, 1.9rad);
+    }
+   
+    100% {
+        opacity: 1;
+        top: 80%;
+        left: 30%;
+        transform: rotate3d(1, 5, 5.5, 0.5rad);
+    } 
+}
+
+.jscenterright {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    animation: cenrig 6s ease infinite;
+}
+
+@keyframes cenrig {
+    0% {
+        opacity: 50%;
+        top: 20%;
+        right: 30%;
+    }
+
+    50% {
+        opacity: 1;
+        top: 70%;
+        right: 30%;
+        transform: rotate3d(1, 9, 0.5, 1.9rad);
+    }
+   
+    100% {
+        opacity: 1;
+        top: 80%;
+        right: 30%;
+        transform: rotate3d(1, 9, 5.5, 9.9rad);
+    } 
+}
+
+
+
+.jsleft{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    opacity: 0;
+    animation: lef 4s linear infinite;
+    
+}
+
+@keyframes lef {
+
+    0% {
+        opacity: 50%;
+        top: 10%;
+        left: 5%;
+    }
+    50% {
+        opacity: 1;
+        top: 70%;
+        left: 5%;
+        transform: rotate3d(1, 9, 0.5, 5.9rad);
+    }
+    100% {
+        opacity: 1;
+        top: 100%;
+        left: 5%;
+        transform: rotate3d(3, 9, 0.5, 5.9rad);
+    }
+    
+}
+
+
+.jsright{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    opacity: 0;
+    animation: rig 5s linear infinite;
+    
+}
+
+@keyframes rig {
+
+    0% {
+        opacity: 50%;
+        top: 10%;
+        right: 5%;
+    }
+    50% {
+        opacity: 1;
+        top: 60%;
+        right: 5%;
+        transform: rotate3d(1, 9, 0.5, 9.9rad);
+    }
+    100% {
+        opacity: 1;
+        top: 100%;
+        right: 5%;
+        transform: rotate3d(9, 9, 0.5, 9.9rad);
+    }
+    
+}
+
+
+
+/* @keyframes cart {
+    0% {
+        transform: rotate3d(1, 1, -0, -1.1turn);
+    }
+    20% {
+        transform: rotate3d(1, 1, -1, -4.1turn);
+    }
+    50% {
+        transform: rotate3d(1, 1, -1, -7.5turn);
+    }
+    100% {
+        transform: rotate3d(1, 1, -1, -9.9turn);
+    } 
+} */
+
+#imageTwo {
+    grid-area: imageTwo;
+    
+    
+}
+
+#about {
+    position: absolute;
+    text-align: justify;
+    top: 50%;
+    left: -20px;
+    width: 915px;
+    height: 530px;
+    grid-area: about;
+    opacity: 0;
+    /* box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(196, 3, 249, 0.3);
+    z-index: 1; */
+   
+}
+
+#about.aniabout {
+    opacity: 1;
+    animation: ab 2s linear;
+}
+/*nuevo efecto*/
+
+@keyframes ab {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        
+        opacity: 50%;
+    }
+}
+
+
+#about h1 {
+        position: absolute;
+        padding: 1rem;
+        color: #fff;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+}
+
+#about p {
+    position: absolute;
+    padding: 2rem;
+    font-size: 37px;
+    margin-top: 150px;
+    color: purple;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 1px;
+  
+
+}
+
+
+
+
+
+#sectionFive {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'first second third'
+        'fourth fiveth sixth';
+}
+
+#sectionFive h1{
+    
+    font-size: 5rem;
+    background: #fff;
+    margin-top: 50%;
+}
+
+#first {
+    grid-area: first;
+    background-image: url('../image/grid.JPG');
+    background-position: center;
+    background-size: cover;
+    filter: brightness(20%);
+    color: rgb(205, 205, 205);
+    
+}
+
+
+#first:hover {
+    filter: brightness(100%);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(196, 3, 249, 0.3);
+    color: rgb(205, 205, 205);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.progress {
+    padding: 10px;
+    grid-area: second;
+    transition: 1s ease;
+    color: rgb(205, 205, 205);
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
+}
+
+
+.progress:hover {
+    opacity: 1;
+    transition: 1s ease-in-out;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(196, 3, 249, 0.3);
+    color: rgb(205, 205, 205);
+}
+
+#third {
+    grid-area: third;
+}
+
+#fourth {
+    grid-area: fourth;
+    
+}
+
+#fiveth {
+
+    grid-area: fiveth;
+}
+
+#sixth {
+    grid-area: sixth;
+}
+
+
+#sectionSix {
+    position: relative;
+    height: 40vh;
+    background-image: url('../image/tecla.jpg');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        '. jobs'
+        '. jobs'; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+#jobs {
+    position: absolute;
+    top: 1px;
+    grid-area: jobs;
+    font-size: 22px;
+    word-spacing: 1rem;
+    z-index: 1;
+}
+
+#jobs h1 {
+    -webkit-text-stroke-color: rgba(196, 3, 249, 0.3);
+    -webkit-text-stroke-width: 3px;
+}
+
+#jobs p {
+    color: #fff;
+    
+}
+
+
+#jobs #dowload {
+    position: absolute;
+    font-size: 2rem;
+    top: 90%;
+    left: 45%;
+    background: transparent;
+    box-shadow: 1px 1px 1px 1px rgba(196, 3, 249, 0.3);
+}
+
+
+input[input=text], input[input=password]{
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input[type=submit]{
+    border: 0;
+    outline: 0;
+    background-color: #003366;
+    
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+}
+
+.barra {
+    position: absolute;
+    width: 80px;
+    height: 22px;
+    
+}
+
+#threethb {
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    opacity: 0;
+    animation: barr 15s ease-in-out infinite;
+
+}
+
+#threethb p {
+    position: absolute;
+    font-family: fantasy;
+    left: 10px;
+    top: 1px;
+
+}
+
+@keyframes barr {
+    10%{
+        background: yellow;
+        width: 20px;
+        height: 3px;
+        opacity: 1;
+    }
+    50%{
+        background: linear-gradient(yellow,rgb(0, 255, 0));
+        width: 50px;
+        height: 3px;
+        opacity: 1;
+    }
+    70%{
+        background: rgb(19, 212, 19);
+        width: 70px;
+        height: 3px;
+        opacity: 1;
+    }
+}
+
+#typescript:hover {
+    transform: rotate(0.1turn);
+    
+    
+}
+
+#react:hover {
+    transform: rotate(0.1turn);
+}
+
+
+#aws:hover {
+    transform: rotate(0.1turn);
+}
+
+#sectionSeven {
+    position: relative;
+    height: 50vh;
+    font-size: 3rem;
+    font-family: 'Ubuntu',sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionSeven form {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    
+}
+
+#sectionSeven .section {
+    padding: 10px;
+}
+
+
+
+#location {
+    position: absolute;
+    padding: 10px;;
+    left: 5%;
+    top: 50%;
+    font-family: 'Figtree', sans-serif;
+    font-size: 2rem;
+}
+
+#location img {
+    width: 40px;
+    height: 40px;
+    margin-top: 5%;
+    
+}
+
+
+
+#formulario {
+    width: 400px;
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(205, 205, 205);
+    
+}
+
+form #botonLogin {
+      background: purple;  
+}
+
+form input {
+    font-size: 2rem;
+    color: purple;
+}
+
+
+
+
+/* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
+/* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
+/* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
+/* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
+
+@media screen and (max-width: 576px) and (min-width: 400px) {
+   * {
+    opacity: 1;
+    z-index: 1;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    }
+
+    section {
+        max-height: 26vh;
+    }
+
+    #sectionOne {
+        position: relative;
+        
+    }
+
+    #sectionOne #imgder {
+        position: absolute;
+        top: 10%;
+        left: 55%;
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        z-index: 1;
+        animation: opa 2s ease-in;
+        background: white;
+    }
+
+    @keyframes opa {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+    }
+   
+    img#imgder.circle {
+        position: absolute;
+        transition: .5s linear;
+        left: 55%;
+        top: 1px;
+        object-fit: cover;
+        background: #fff;
+        z-index: 0;
+    }
+    
+    #izq {
+        position: absolute;
+        left: 30px;
+        top: 10px;
+        z-index: 2;
+        justify-content: center;
+    }
+
+    #izq h2 {
+        font-size: 2rem;
+    }
+
+    #izq h1 {
+        font-size: 2rem;
+    }
+    
+    #presentacion {
+        position: absolute;
+        grid-area: presentacion;
+        font-size: 1rem;
+    }
+    
+    #sectionTwo {
+        position: relative;
+        height: 60vh;
+        background: linear-gradient(white, purple);
+        z-index: 0;
+        }
+
+    #sectionTwo p {
+        position: absolute;
+        font-size: 1rem;
+        
+    }
+
+    #centro{
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        
+    }
+
+    #cero {
+        opacity: 0;
+    }
+
+
+    
+    #centro.mostrartextThree {
+        opacity: 1;
+        
+        transition: .5 linear;
+    }
+    
+#sectionThree {
+        position: relative;
+    }
+
+    
+.ja h1{
+    color: black;
+}
+
+#javascript {
+    position: absolute;
+    font-size: 7rem;
+    top: 1px;
+    left: 5%;
+    opacity: 0;
+ 
+}
+
+#javascript.efectoJ {
+    
+    animation: letterA 1s ease;
+    opacity: 1;
+}
+
+ @keyframes letterA {
+    50%{
+        transform: matrix(1, 20, 30, 4, 5, 6);
+        
+    }
+    
+} 
+
+#css {
+    position: absolute;
+    
+    font-size: 7rem;
+    top: 20px;
+    left: 5%;
+    
+}
+
+#css.efectoC {
+    animation: letterC 3s ease-in-out;
+}
+
+@keyframes letterC {
+    0% {
+        opacity: 0%;
+        
+    }
+    15% {
+        opacity: 80%;
+    }
+    20%{
+        right: 10%;
+    }
+    
+}
+
+#html {
+    position: absolute;
+    
+    font-size: 7rem;
+    top: 40px;
+    left: 5%;
+    
+}
+
+#html.efectoh {
+    animation: letterD 1s ease-in-out;
+}
+
+@keyframes letterD {
+    50%{
+        opacity: 80%;
+        right: 500px;
+    }
+      
+}
+
+#subsection.fouranimation {
+    animation: four 1s linear;
+}
+
+@keyframes four {
+    0% {
+        transform: rotate(9.9turn);
+    }
+    
+}
+
+/* #subsection {
+    position: absolute;
+    
+}
+
+#subsection img {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    object-fit: contain;
+    
+} */
+
+#node img{
+    position: absolute;
+    left: 51%;
+    
+}
+
+#sql {
+    grid-area: sql;
+   
+}
+
+#sql img{
+    position: absolute;
+    left: -20%;
+    top: 30px;
+    
+}
+
+#scss img{
+    position: absolute;
+    top: 40px;
+    left: 51%;
+    
+}
+
+#typescript img {
+    position: absolute;
+    top: 100px;
+    right: -30%;
+    transform: rotate(9.9turn);
+}
+
+#react img {
+    position: absolute;
+    top: 100px;
+    right: 30%;
+    transform: rotate(9.9turn);
+}
+
+#aws img {
+    position: absolute;
+    top: 100px;
+    right: 90%;
+    transform: rotate(9.9turn);
+}
+
+.barra {
+    opacity: 0;
+}
+
+#subsection {
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+}
+
+#subsection .brig{
+   animation: cod 4s linear infinite;
+}
+
+
+@keyframes cod {
+    50%{
+        filter: brightness(0);
+    }
+}
+
+#subsection .learned {
+    animation: codi 7s linear infinite;
+}
+
+@keyframes codi {
+    50%{
+        filter: brightness(1.90);
+    }
+}
+
+    
+    #sectionFour {
+        position: relative;
+        left: -50%;
+        
+    }
+
+    #sectionFour h1 {
+        position: absolute;
+        font-size: 2rem;
+    }
+    
+    #javas img{
+        width: 50px;
+        height: 10px;
+        object-fit: cover;
+        animation: javass 1s linear ;
+        opacity: 0;
+    }
+    
+    @keyframes javass {
+        0% {
+            opacity: 1;
+            margin-top: 100%;
+            margin-left: 1%;
+        }
+        50% {
+            margin-left: 90%;
+            opacity: 0;
+        }
+     }
+    
+    
+    #carta p {
+        color: purple;
+    }
+    
+    #imageTwo {
+        grid-area: imageTwo;
+    }
+    
+    #about {
+        position: absolute;
+        text-align: justify;
+        top: -30%;
+        right: 10%;
+        opacity: 1;
+        
+    }
+
+    #about h1 {
+        position: absolute;
+        top: -5%;
+        left: 2%;
+    }
+
+    #about p {
+        position: absolute;
+        top: -20%;
+        left: 2%;
+        font-size: 15px;
+        width: 40%;
+        
+    }
+    
+    #sectionFive {
+        
+        z-index: 1;
+        height: 50vh;
+        display: grid;
+        gap: 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'first second third'
+            'fourth fiveth sixth';
+    }
+
+    #sectionFive h1{
+    
+        font-size: 10px;
+        background: #fff;
+        
+    }
+    
+    #first {
+        grid-area: first;
+        width: 30%;
+        height: 35%;
+        
+    }
+
+    #second {
+        grid-area: second;
+        width: 30%;
+        height: 35%;
+    }
+
+    #third {
+        grid-area: third;
+        width: 30%;
+        height: 35%;
+    }
+    
+    #fourth {
+        grid-area: fourth;
+        width: 30%;
+        height: 35%;
+        
+    }
+    
+    #fiveth {
+        
+        grid-area: fiveth;
+        width: 30%;
+        height: 35%;
+    }
+    
+    #sixth {
+        grid-area: sixth;
+        width: 30%;
+        height: 35%;
+    }
+    
+    
+
+    
+    #sectionSix {
+        position: relative;
+        height: 20vh;
+        z-index: 2;
+        background-image: url('./public/image/tecla.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+    }
+
+     #jobs {
+        position: absolute;
+        top: -1%;
+        left: -90%;
+        right: 100%;
+        z-index: 1;
+        
+    }
+     
+    #jobs h1 {
+        -webkit-text-stroke-color: rgba(196, 3, 249, 0.3);
+        -webkit-text-stroke-width: 3px;
+    }
+    
+    #jobs p {
+        position: absolute;
+        color: #fff;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+    #jobs #dowload {
+        position: absolute;
+        background: transparent;
+        font-size: 20px;
+        margin-top: 50%;
+        margin-left: 70%;
+        box-shadow: 1px 1px 1px 1px rgba(196, 3, 249, 0.3);
+    }
+    
+    
+    
+    #sectionSeven {
+        position: relative;
+        height: 10vh;
+        left: -40%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #sectionSeven #formulario input{
+        left: 80%;
+        font-size: 20px;
+    }
+
+    #sectionSeven #location {
+        top: 350px;
+        left: 50%;
+        width: 100px;
+
+    }
+
+    #sectionSeven #location p {
+        font-size: 15px;
+    }
+    
+   
+
+}
+
+ 
