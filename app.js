@@ -12,24 +12,33 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.set('views', path.join(__dirname, 'views'))
-
-app.use(express.static(path.join(__dirname, 'public')))
-
+// app.set('views', path.join(__dirname, 'views'))
 app.set('view engine','ejs')
 
-const mongo_uri = 'mongodb+srv://superuser:supersuper@profile.wqmfhch.mongodb.net/portafolio?retryWrites=true&w=majority'
+app.set('views', __dirname + '/views' )
+app.use('/public', express.static('public'))
 
-mongoose.connect(mongo_uri, function(err){
-    if(err) {
-        throw err
-    } else {
-        console.log(`Successfully connected to ${mongo_uri}`)
-    }
-})
+// if(process.env.NODE_ENV !== 'production') {}
+    require('dotenv').config()
+
+
+mongoose
+    .connect(process.env.MONGODB_URI)
+    .then(() => console.log('CONECTED TO MONGODB'))
+    .catch((error) => console.error(error))
+// mongo_uri = 'mongodb+srv://superuser:supersuper@profile.wqmfhch.mongodb.net/portafolio?retryWrites=true&w=majority'
+
+
+// mongoose.connect(MONGODB_URI, function(err){
+//     if(err) {
+//         throw err
+//     } else {
+//         console.log(`Successfully connected to ${MONGODB_URI}`)
+//     }
+// })
 
 app.get('/', (req, res) => {
-    res.render('index.ejs')
+    res.render('index')
 })
 
 app.post('/register', (req, res) => {
