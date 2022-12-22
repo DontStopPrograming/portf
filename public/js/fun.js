@@ -1,7 +1,7 @@
 let foto = document.getElementById('imgder')
 let textone = document.getElementById('izq')
 let texttwo = document.getElementById('presentacion')
-let textthree = document.getElementById('centro')
+let textthree = document.getElementById('cero')
 
 let sectionback = document.getElementById('sectionTwo')
 
