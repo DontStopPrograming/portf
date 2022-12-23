@@ -11,7 +11,13 @@ let efectoletrah = document.getElementById('html')
 
 let aboutanimacion = document.getElementById('about')
 
-let fourani = document.getElementById('subsection')
+let aniNode = document.getElementById('node')
+let aniSql = document.getElementById('sql')
+let aniScss = document.getElementById('scss')
+
+let aniTy = document.getElementById('typescript')
+let aniReact = document.getElementById('react')
+let aniAws = document.getElementById('aws')
 
 const chargeImg = (input, observation) => {
     console.log('Mostrando')
@@ -33,7 +39,13 @@ const chargeImg = (input, observation) => {
             input.target.classList.add('efectoJ')
             input.target.classList.add('aniabout')
 
-            input.target.classList.add('fouranimation')
+            input.target.classList.add('animationNode')
+            input.target.classList.add('animationSql')
+            input.target.classList.add('animationScss')
+
+            input.target.classList.add('animationTypescript')
+            input.target.classList.add('animationReact')
+            input.target.classList.add('animationAws')
             
 
             
@@ -60,4 +72,10 @@ obs.observe(efectoletrah)
 
 obs.observe(aboutanimacion)
 
-obs.observe(fourani)
+obs.observe(aniNode)
+obs.observe(aniSql)
+obs.observe(aniScss)
+
+obs.observe(aniTy)
+obs.observe(aniReact)
+obs.observe(aniAws)

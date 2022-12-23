@@ -153,7 +153,7 @@
 }
 
 #sectionTwo {
-    /* height: 50vh; */
+    height: 40vh;
     background: linear-gradient(white, purple);
     display: grid;
     grid-template-columns: 1fr;
@@ -167,7 +167,7 @@
     grid-area: cero;
     opacity: 0;
     font-family:'Courier New', Courier, monospace;
-    font-size: 3rem;
+    font-size: 5rem;
 
 }
 
@@ -193,7 +193,7 @@
 
 #sectionThree {
     display: grid;
-    gap: 3rem;
+    gap: 8rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -201,7 +201,13 @@
         '. javascript node sql scss .'
         '. css typescript react aws .'
         '. html . . . .';
-      /* animation: letterA 5s ease;   */
+      /* animation: letterA 5s ease;  */
+}
+
+#sectionThree img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .ja h1{
@@ -212,14 +218,14 @@
  #javascript {
     
     grid-area: javascript;
-    /* font-size: 7rem;
+    font-size: 5rem;
     top: 1px;
     right: 10%; 
-    opacity: 0; */
+    opacity: 0;
  
 }
 
-/* #javascript.efectoJ {
+#javascript.efectoJ {
     
     animation: letterA 1s ease;
     opacity: 1;
@@ -231,17 +237,17 @@
         
     }
     
-}  */
+} 
 
 #css {
     
     grid-area: css;
-    /* font-size: 7rem;
-    right: 30%; */
+    font-size: 5rem;
+    right: 30%;
     
 }
 
-/* #css.efectoC {
+#css.efectoC {
     animation: letterC 3s ease-in-out;
 }
 
@@ -257,17 +263,17 @@
         right: 10%;
     }
     
-} */
+} 
 
 #html {
     
     grid-area: html;
-    /* font-size: 7rem;
-    right: 30%;  */
+    font-size: 5rem;
+    right: 30%; 
     
 }
 
-/* #html.efectoh {
+#html.efectoh {
     animation: letterD 1s ease-in-out;
 }
 
@@ -277,72 +283,95 @@
         right: 500px;
     }
       
-} */
-
-/* 
-#subsection.fouranimation {
-    animation: four 1s linear;
-}
-
-@keyframes four {
-    0% {
-        transform: rotate(9.9turn);
-    }
-    
-    
-    
-} */
-  
-#subsection img {
-    width: 50px;
-    object-fit: cover;
-    
 } 
- 
-/* #subsection{
-    
-     top: 20%;
-    left: 60%;     
-    grid-area: subsection;
-    display: grid;
-    gap: 70px;
-    grid-template-columns: repeat (4, 1fr);
-    grid-template-rows: repeat (3, 1fr);
-    grid-template-areas: 
-        '. . . .'
-        '. node sql scss'
-        '. typescript react aws'; 
-    
-}  */
 
 #node{
     grid-area: node;
     
 }
+    #node.animationNode {
+        animation: no 1s linear;
+    }
+
+    @keyframes no {
+        0% {
+            transform: rotate(9.9turn);
+        }
+    }
+
 
 #sql {
     grid-area: sql;
 }
+    #sql.animationSql {
+        animation: sq 1s linear;
+    }
 
+    @keyframes sq {
+        10% {
+            transform: rotate(9.9turn);
+     
+    }   
+}
 
 #scss {
     grid-area: scss;
 }
+     #scss.animationScss {
+        animation: sc 1s linear;
+    }
+
+    @keyframes sc {
+        20% {
+            transform: rotate(9.9turn);
+     
+    }   
+    }
 
 #typescript {
     grid-area: typescript;
+}
+    #typescript.animationTypescript {
+    animation: ty 1s linear;
+    }
+
+@keyframes ty {
+    30% {
+        transform: rotate(9.9turn);
+ 
+}   
 }
 
 #react {
     grid-area: react;
 }
+    #react.animationReact {
+    animation: re 1s linear;
+    }
+
+@keyframes re {
+    40% {
+        transform: rotate(9.9turn);
+ 
+}   
+}
 
 #aws {
     grid-area: aws;
 }  
+    #aws.animationAws {
+    animation: aw 1s linear;
+}
+
+@keyframes aw {
+    50% {
+        transform: rotate(9.9turn);
+ 
+}   
+}
 
 
-/* #subsection .brig{
+.subsection .brig{
    animation: cod 4s linear infinite;
 }
 
@@ -353,7 +382,7 @@
     }
 }
 
-#subsection .learned {
+.subsection .learned {
     animation: codi 7s linear infinite;
 }
 
@@ -361,7 +390,7 @@
     50%{
         filter: brightness(1.90);
     }
-} */
+} 
 
 #sectionFour {
     
@@ -379,7 +408,7 @@
     
     text-align: justify;
     grid-area: about;
-    font-size: 2rem;
+    font-size: 3rem;
     
     opacity: 0;
     /* box-shadow:
@@ -737,33 +766,25 @@
 #joh {
     
     grid-area: joh;
-    font-size: 5rem;
+    font-size: 8rem;
     -webkit-text-stroke-color: rgba(196, 3, 249, 0.3);
     -webkit-text-stroke-width: 3px;
    
 }
 
 #jop {
-    
     grid-area: jop;
-    font-size: 20px;
+    font-size: 2rem;
     color: #fff;
     
 }
 
 #dowload {
     grid-area: dowload;    
-    font-size: 25px;
-}
-
-
-
-#dowload {
-    
+    font-size: 1rem;
     background: transparent;
     box-shadow: 1px 1px 1px 1px rgba(196, 3, 249, 0.3);
 }
-
 
 input[input=text], input[input=password]{
     border: solid 1px #ccc;
@@ -801,6 +822,7 @@ input[type=submit]{
 #threethb p {
     position: absolute;
     font-family: fantasy;
+    font-size: 40px;
     left: 10px;
     top: 1px;
 
@@ -843,7 +865,7 @@ input[type=submit]{
 }
 
 #sectionSeven {
-    height: 70vh;
+    height: 65vh;
     font-size: 3rem;
     font-family: 'Ubuntu',sans-serif;
     display: grid;
@@ -869,20 +891,15 @@ input[type=submit]{
 
 #location {
     grid-area: location;
-    padding: 20px;
-    font-size: 2rem;
-    
-    
-    
+    margin-top: 10%;
+    padding: 40px;
+    font-size: 1rem;
 }
 
 #location img {
-    width: 40px;
-    height: 40px;
-    
-    
+    width: 30px;
+    height: 30px;
 }
-
 
 form #botonLogin {
       background: purple;  
@@ -900,3 +917,196 @@ form input {
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 
+@media screen and (max-width: 800px) {
+    #sectionOne {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'izq'
+            'der'
+            'presentacion';
+        
+    }
+
+    #der {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentacion {
+    
+        grid-area: presentacion;
+        font-family: 'Figtree', sans-serif;
+        font-size: 3rem;
+        opacity: 0;
+        /* top: 80%; */
+        left: 1%;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+        z-index: 1;
+    }
+
+    #cero {
+        grid-area: cero;
+        opacity: 0;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    #sectionTwo {
+        height: 30vh;
+        background: linear-gradient(white, purple);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            'cero'
+            'cero';
+    }
+
+    #sectionThree {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'javascript node sql scss'
+            'css typescript react aws'
+            'html . . . .';
+    }
+
+   
+   
+
+    #threethb p {
+        position: absolute;
+        font-family: fantasy;
+        font-size: 10px;
+        left: 10px;
+        top: 1px;
+    
+    }
+
+    #javascript {
+    
+        grid-area: javascript;
+        font-size: 1rem;
+        opacity: 0;
+     
+    }
+
+    #css {
+    
+        grid-area: css;
+        font-size: 1rem;
+        
+    }
+
+    #html {
+    
+        grid-area: html;
+        font-size: 1rem;
+        
+    }
+
+    #sectionThree img{
+        width: 50px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+
+
+    #sectionFour {
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            '. . . .'
+            '. about about .'
+            '. about about .';
+        
+    }
+
+    #about {
+    
+        text-align: justify;
+        grid-area: about;
+        font-size: 1rem;
+        opacity: 0;
+        
+    }
+
+    #sectionFive {
+        height: 37vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            '. . . . .'
+            '. first second third .'
+            '. fourth fiveth sixth .'
+            '. . . . .';
+        
+    }
+
+    #sectionSix {
+        height: 50vh;
+        background-image: url('../image/tecla.jpg');
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            'jop jop jop'
+            'jop jop jop';
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    #joh {
+    
+        grid-area: joh;
+        font-size: 5rem;
+        -webkit-text-stroke-color: rgba(196, 3, 249, 0.3);
+        -webkit-text-stroke-width: 3px;
+       
+    }
+    
+    #jop {
+        
+        grid-area: jop;
+        font-size: 20px;
+        color: #fff;
+        
+    }
+
+    #sectionSeven {
+        height: 70vh;
+        font-size: 3rem;
+        font-family: 'Ubuntu',sans-serif;
+        display: grid;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            '. formulario'
+            '. formulario'
+            'location location';
+    }
+
+    #location {
+        grid-area: location;
+        margin-top: 30%;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+}
