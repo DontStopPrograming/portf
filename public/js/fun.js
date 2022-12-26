@@ -3,6 +3,8 @@ let textone = document.getElementById('izq')
 let texttwo = document.getElementById('presentacion')
 let textthree = document.getElementById('cero')
 
+let mostrarSecSix = document.getElementById('sectionSix')
+
 let sectionback = document.getElementById('sectionTwo')
 
 let efectoletraj = document.getElementById('javascript')
@@ -27,6 +29,7 @@ const chargeImg = (input, observation) => {
             input.target.classList.remove('mostrartextTwo')
             input.target.classList.add('mostrartextOne')
             
+            
 
         } else {
             input.target.classList.remove('mostrartextOne')
@@ -47,6 +50,7 @@ const chargeImg = (input, observation) => {
             input.target.classList.add('animationReact')
             input.target.classList.add('animationAws')
             
+            input.target.classList.add('mostrarSectionSix')
 
             
         }
@@ -63,6 +67,8 @@ obs.observe(foto)
 obs.observe(textone)
 obs.observe(texttwo)
 obs.observe(textthree)
+
+obs.observe(mostrarSecSix)
 
 obs.observe(sectionback)
 
