@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+
 const app = express()
 
 const path = require('path')
@@ -21,12 +22,11 @@ app.use('/public', express.static('public'))
 // if(process.env.NODE_ENV !== 'production') {}
     require('dotenv').config()
 
+ mongoose
+     .connect(process.env.MONGODB_URI)
+     .then(() => console.log('CONECTED TO MONGODB'))
+     .catch((error) => console.error(error))
 
-mongoose
-    .connect(process.env.MONGODB_URI)
-    .then(() => console.log('CONECTED TO MONGODB'))
-    .catch((error) => console.error(error))
-// mongo_uri = 'mongodb+srv://superuser:supersuper@profile.wqmfhch.mongodb.net/portafolio?retryWrites=true&w=majority'
 
 
 // mongoose.connect(MONGODB_URI, function(err){
