@@ -22,8 +22,11 @@ app.use('/public', express.static('public'))
 // if(process.env.NODE_ENV !== 'production') {}
     require('dotenv').config()
 
+mongoose.set('strictQuery', false)
+
  mongoose
      .connect(process.env.MONGODB_URI)
+     
      .then(() => console.log('CONECTED TO MONGODB'))
      .catch((error) => console.error(error))
 
