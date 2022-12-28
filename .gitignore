@@ -2,3 +2,5 @@ node_modules
 README.node_modules
 urls.json
 .env
+.vscode
+SKIP_PREFLIGHT_CHECK = true;
