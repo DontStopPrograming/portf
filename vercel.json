@@ -1,16 +1,14 @@
 {
     "cleanUrls": true,
     "trailingSlash": false,
-    "public": true,
-    "rewrites": [
+    "rewrites":  [
         {
-            "src": "./app.js",
-            "use": "@vercel/node"
-        }       
-    ],
-    "routes": [
+            "source": "/home",
+            "destination": "/index.html"
+        },
         {
-            "src": "/(.*)"
+            "source": "/home",
+            "destination": "/"
         }
     ]
 }
