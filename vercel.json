@@ -5,7 +5,14 @@
         {
             "source": "/home",
             "destination": "/"
+        },
+        {
+            "source": "/register",
+            "destination": "/signup.html"
+        },
+        {
+            "source": "/authenticate",
+            "destination": "/authenticate.html"
         }
-        
     ]
 }
