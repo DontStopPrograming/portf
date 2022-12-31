@@ -1,6 +1,7 @@
 {
     "cleanUrls": true,
     "trailingSlash": false,
+    "public": true,
     "rewrites": [
         {
             "source": "/home",
