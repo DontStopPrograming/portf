@@ -17,8 +17,8 @@ app.use(express.urlencoded({extended: false}))
 app.set('view engine','ejs')
 
 app.set('views', __dirname + '/views' )
-// app.use('/public', express.static('public'))
-app.use(express.static(__dirname + '/public/'))
+app.use('/public', express.static('public'))
+// app.use(express.static(__dirname + '/public/'))
 
 // if(process.env.NODE_ENV !== 'production') {}
     require('dotenv').config()
