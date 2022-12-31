@@ -51,10 +51,15 @@ app.post('/register', (req, res) => {
 
     user.save(err => {
         if(err){
-            res.status(500).send('ERROR TO REGISTER')
+            app.get('/register', (req, res) => {
+                res.status(500).send('ERROR TO REGISTER')
+            })
+            
             
         } else {
-            res.status(200).send('REGISTERED USER')
+            app.get('/register', (req, res) => {
+                res.status(200).send('REGISTERED USER')
+            })
             
         }
     })
