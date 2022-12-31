@@ -4,8 +4,13 @@
     "public": true,
     "rewrites": [
         {
-            "source": "/home",
-            "destination": "/"
+            "src": "./app.js",
+            "use": "@vercel/node"
         }       
+    ],
+    "routes": [
+        {
+            "src": "/(.*)"
+        }
     ]
 }
