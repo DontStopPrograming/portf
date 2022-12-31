@@ -43,13 +43,7 @@ mongoose.set('strictQuery', true)
 app.get('/', (req, res) => {
     res.render('index')
 })
-app.get('/register', (req, res) => {
-    res.render('register')
-})
 
-app.get('/authenticate', (req, res) => {
-    res.render('authenticate')
-})
 
 app.post('/register', (req, res) => {
     const {username, password} = req.body
@@ -60,6 +54,7 @@ app.post('/register', (req, res) => {
             res.status(500).send('ERROR TO REGISTER')
         } else {
             res.status(200).send('REGISTERED USER')
+            
         }
     })
 })
