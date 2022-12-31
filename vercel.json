@@ -8,7 +8,7 @@
         },
        {
             "source": "/register",
-            "destination": "/register"
+            "destination": "/register.html"
        }
         
 
