@@ -7,8 +7,8 @@
             "destination": "/"
         },
        {
-            "source": "/signup",
-            "destination": "/signup.html"
+            "source": "/register",
+            "destination": "/"
        }
         
 
