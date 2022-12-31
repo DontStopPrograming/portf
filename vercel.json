@@ -5,12 +5,6 @@
         {
             "source": "/home",
             "destination": "/"
-        },
-       {
-            "source": "/register",
-            "destination": "./public/html/register.html"
-       }
-        
-
+        }       
     ]
 }
