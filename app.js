@@ -43,6 +43,13 @@ mongoose.set('strictQuery', true)
 app.get('/', (req, res) => {
     res.render('index')
 })
+app.get('/register', (req, res) => {
+    res.render('register')
+})
+
+app.get('/authenticate', (req, res) => {
+    res.render('authenticate')
+})
 
 app.post('/register', (req, res) => {
     const {username, password} = req.body
