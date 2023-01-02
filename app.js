@@ -45,13 +45,15 @@ app.get('/', (req, res) => {
 })
 
 
+
 app.post('/register', (req, res) => {
     const {username, password} = req.body
     const user = new User({username, password})
 
     user.save(err => {
         if(err){
-            res.status(500).send('ERROR TO REGISTER')
+            // res.status(500).send('ERROR TO REGISTER')
+            res.render('register')
             
         } else {
             res.status(200).send('REGISTERED USER')
