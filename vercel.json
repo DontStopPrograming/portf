@@ -9,10 +9,6 @@
         {
             "source": "/home",
             "destination": "/"
-        },
-        {
-            "source": "/home",
-            "destination": "/public/html/index.html"
         }
     ]
 }
