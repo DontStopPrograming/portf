@@ -9,6 +9,10 @@
         {
             "source": "/home",
             "destination": "/"
+        },
+        {
+            "source": "/register",
+            "destination": "/register"
         }
         
     ]
