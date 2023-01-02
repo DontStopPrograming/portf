@@ -3,12 +3,16 @@
     "trailingSlash": false,
     "rewrites":  [
         {
-            "source": "/index.html",
-            "destination": "/home"
+            "source": "/home",
+            "destination": "/index.html"
         },
         {
-            "source": "/",
-            "destination": "/home"
+            "source": "/home",
+            "destination": "/"
+        },
+        {
+            "source": "/register",
+            "destination": "/register"
         }
     ]
 }
