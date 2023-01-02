@@ -44,9 +44,6 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/register', (req, res) => {
-    res.render('register')
-})
 
 app.post('/register', (req, res) => {
     const {username, password} = req.body
@@ -55,10 +52,10 @@ app.post('/register', (req, res) => {
     user.save(err => {
         if(err){
            res.status(500).send('ERROR TO REGISTER')
-           res.render('register')
+           
         } else {
             res.status(200).send('REGISTERED USER')
-            res.render('register')
+            
         }
     })
 })
