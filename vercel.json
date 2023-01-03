@@ -2,24 +2,13 @@
     "cleanUrls": true,
     "trailingSlash": false,
     "rewrites":  [
-       
         {
             "source": "/home",
             "destination": "/"
         },
         {
-            "source": "/registrandome",
+            "source": "/regis",
             "destination": "/signup.html"
-        },
-        {
-            "source": "/registerError",
-            "destination": "/public/html/registerError.html"
-        },
-        {
-            "source": "/registerUser",
-            "destination": "/public/html//registerUser.html"
         }
-        
-        
     ]
 }
