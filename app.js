@@ -46,6 +46,10 @@ app.get('/', (req, res, next) => {
     next()
 })
 
+app.get('/register', (req, res) => {
+    res.render('/register')
+})
+
  app.get('/registerError', (req, res) => {
      res.render('/registerError')
  })
