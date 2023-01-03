@@ -12,7 +12,7 @@
         },
         {
             "source": "/registerError",
-            "destination": "/public/html/registerError.html"
+            "destination": "./public/html/registerError.html"
             
         }
     ]
