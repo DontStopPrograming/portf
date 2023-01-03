@@ -41,8 +41,9 @@ mongoose.set('strictQuery', true)
 //     }
 // })
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
     res.render('index')
+    next()
 })
 
  app.get('/registerError', (req, res) => {
