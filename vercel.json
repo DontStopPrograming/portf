@@ -1,19 +1,15 @@
 {
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "rewrites":  [
-        {
-            "source": "/home",
-            "destination": "/"
-        },
-        {
-            "source": "/signup",
-            "destination": "/public/html/signup.html"
-        },
-        {
-            "source": "/registerError",
-            "destination": "/public/html/registerError.html"
-            
-        }
-    ]
+ "version": 2,
+ "builds": [
+    {
+        "src": "./app.js",
+        "use": "@vercel/node"
+    }
+ ],
+ "routes": [
+    {
+        "src": "/(.*)",
+        "dest": "/"
+    }
+ ]
 }
