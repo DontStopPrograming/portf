@@ -47,11 +47,11 @@ app.get('/', (req, res, next) => {
 })
 
  app.get('/registerError', (req, res) => {
-     res.render('/public/views/registerError')
+     res.render('/registerError')
  })
 
  app.get('/registerUser', (req, res) => {
-     res.render('/public/views/registerUser')
+     res.render('/registerUser')
  })
 
 app.post('/register', (req, res) => {
@@ -61,12 +61,12 @@ app.post('/register', (req, res) => {
     user.save(err => {
         if(err){
         // res.status(500).send('ERROR TO REGISTER')
-            res.render('/public/views/registerError')
+            res.render('registerError')
         
            
         } else {
         // res.status(200).send('REGISTERED USER')
-            res.render('/public/views/registerUser')
+            res.render('registerUser')
             
         }
     })
