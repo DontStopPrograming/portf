@@ -8,8 +8,8 @@
             "destination": "/"
         },
         {
-            "source": "/register",
-            "destination": "/register"
+            "source": "/registrandome",
+            "destination": "/signup.html"
         },
         {
             "source": "/registerError",
