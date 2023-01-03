@@ -9,6 +9,11 @@
         {
             "source": "/signup",
             "destination": "/public/html/signup.html"
+        },
+        {
+            "source": "/registerError",
+            "destination": "/public/html/registerError"
+            
         }
     ]
 }
