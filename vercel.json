@@ -6,6 +6,18 @@
         {
             "source": "/home",
             "destination": "/"
+        },
+        {
+            "source": "/register",
+            "destination": "/register"
+        },
+        {
+            "source": "/registerError",
+            "destination": "/registerError"
+        },
+        {
+            "source": "/registerUser",
+            "destination": "/registerUser"
         }
         
         
