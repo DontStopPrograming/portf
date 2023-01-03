@@ -8,6 +8,7 @@ const path = require('path')
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const User = require('./public/js/user')
+const { send } = require('process')
 
 app.use(cors())
 app.use(express.json())
@@ -44,9 +45,13 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/registerError', (req, res) => {
-    res.render('registerError')
-})
+ app.get('/registerError', (req, res) => {
+     res.render('registerError')
+ })
+
+ app.get('/registerUser', (req, res) => {
+     res.render('registerUser')
+ })
 
 app.post('/register', (req, res) => {
     const {username, password} = req.body
@@ -54,12 +59,13 @@ app.post('/register', (req, res) => {
 
     user.save(err => {
         if(err){
-        //    res.status(500).send('ERROR TO REGISTER')
-        res.render('registerError')
+        // res.status(500).send('ERROR TO REGISTER')
+            res.render('registerError')
+        
            
         } else {
-            // res.status(200).send('REGISTERED USER')
-            
+        // res.status(200).send('REGISTERED USER')
+            res.render('registerUser')
             
         }
     })
