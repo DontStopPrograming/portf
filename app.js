@@ -47,11 +47,11 @@ app.get('/', (req, res, next) => {
 })
 
  app.get('/registerError', (req, res) => {
-     res.render('/public/html/registerError')
+     res.render('/public/views/registerError')
  })
 
  app.get('/registerUser', (req, res) => {
-     res.render('/public/html/registerUser')
+     res.render('/public/views/registerUser')
  })
 
 app.post('/register', (req, res) => {
