@@ -65,12 +65,12 @@ app.post('/register', (req, res) => {
     user.save(err => {
         if(err){
         //  res.status(500).send('ERROR TO REGISTER')
-             res.render('https://dyamond.vercel.app/public/html/registerError')
+             res.render('registerError')
         
            
         } else {
         //  res.status(200).send('REGISTERED USER')
-             res.render('https://dyamond.vercel.app/public/html/registerUser')
+             res.render('registerUser')
             
         }
     })
