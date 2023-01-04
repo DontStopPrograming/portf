@@ -50,11 +50,11 @@ app.get('/register', (req, res) => {
     res.render('register')
 })
 
- app.get('/public/html/registerError', (req, res) => {
+ app.get('https://dyamond.vercel.app/public/html/registerError', (req, res) => {
      res.render('registerError')
  })
  
- app.get('/public/html/registerUser', (req, res) => {
+ app.get('https://dyamond.vercel.app/public/html/registerUser', (req, res) => {
      res.render('registerUser')
  })
 
