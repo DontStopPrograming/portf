@@ -1,13 +1,14 @@
 {
-    "rewrites": 
-    [
-        {   
-            "source": "/(.*)", 
-            "destination": "/index.html" 
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [
+        {
+            "source": "/home",
+            "destination": "/"
         },
-        {   
-            "source": "/registerError", 
-            "destination": "/public/html/registerError.html" 
+        {
+            "source": "/signup",
+            "destination": "/signup.html"
         }
     ]
 }
