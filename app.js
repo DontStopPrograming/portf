@@ -65,7 +65,7 @@ app.post('/signup', (req, res) => {
     user.save(err => {
         if(err){
         //   res.status(500).send('ERROR TO REGISTER')
-            res.render('signup')
+            return res.render('signup')
         
            
         } else {
