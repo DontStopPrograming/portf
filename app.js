@@ -47,7 +47,7 @@ app.get('/', (req, res, next) => {
 })
 
  app.get('/signup', (req, res) => {
-     res.render('signup')
+     res.render('./public/html/signup.html')
  })
 
   app.get('/registerError', (req, res) => {
@@ -65,7 +65,7 @@ app.post('/signup', (req, res) => {
     user.save(err => {
         if(err){
         //   res.status(500).send('ERROR TO REGISTER')
-            return res.render('signup')
+            return res.render('./public/html/signup.html')
         
            
         } else {
