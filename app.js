@@ -70,7 +70,7 @@ app.post('/signup', (req, res) => {
            
         } else {
         //   res.status(200).send('REGISTERED USER')
-            res.render('registerUser')
+            return res.render('registerUser')
             
         }
     })
