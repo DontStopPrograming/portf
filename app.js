@@ -47,7 +47,7 @@ app.get('/', (req, res, next) => {
 })
 
  app.get('/signup', (req, res) => {
-     res.render('register')
+     res.render('signup')
  })
 
   app.get('/registerError', (req, res) => {
