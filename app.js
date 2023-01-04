@@ -50,12 +50,12 @@ app.get('/register', (req, res) => {
     res.render('/register')
 })
 
- app.get('/registerError', (req, res) => {
-     res.render('/registerError')
+ app.get('/public/html/registerError', (req, res) => {
+     res.render('registerError')
  })
-
- app.get('/registerUser', (req, res) => {
-     res.render('/registerUser')
+ 
+ app.get('/public/html/registerUser', (req, res) => {
+     res.render('registerUser')
  })
 
 app.post('/register', (req, res) => {
@@ -64,13 +64,13 @@ app.post('/register', (req, res) => {
 
     user.save(err => {
         if(err){
-         res.status(500).send('ERROR TO REGISTER')
-            // res.render('registerError')
+        //  res.status(500).send('ERROR TO REGISTER')
+             res.render('https://dyamond.vercel.app/public/html/registerError')
         
            
         } else {
-         res.status(200).send('REGISTERED USER')
-            // res.render('registerUser')
+        //  res.status(200).send('REGISTERED USER')
+             res.render('https://dyamond.vercel.app/public/html/registerUser')
             
         }
     })
