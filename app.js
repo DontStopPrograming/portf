@@ -46,31 +46,31 @@ app.get('/', (req, res, next) => {
     next()
 })
 
-// app.get('/register', (req, res) => {
-//     res.render('register')
-// })
+ app.get('/signup', (req, res) => {
+     res.render('register')
+ })
 
-//  app.get('https://dyamond.vercel.app/public/html/registerError.html', (req, res) => {
-//      res.render('registerError')
-//  })
+  app.get('/registerError', (req, res) => {
+      res.render('registerError')
+  })
  
-//  app.get('https://dyamond.vercel.app/public/html/registerUser.html', (req, res) => {
-//      res.render('registerUser')
-//  })
+  app.get('/registerUser', (req, res) => {
+      res.render('registerUser')
+  })
 
-app.post('/register', (req, res) => {
+app.post('/signup', (req, res) => {
     const {username, password} = req.body
     const user = new User({username, password})
 
     user.save(err => {
         if(err){
-          res.status(500).send('ERROR TO REGISTER')
-            //  res.render('registerError')
+        //   res.status(500).send('ERROR TO REGISTER')
+            res.render('registerError')
         
            
         } else {
-          res.status(200).send('REGISTERED USER')
-            //  res.render('registerUser')
+        //   res.status(200).send('REGISTERED USER')
+            res.render('registerUser')
             
         }
     })
