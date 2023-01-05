@@ -51,12 +51,12 @@ app.get('/', (req, res, next) => {
      next()
  })
 
-  app.get('/registerError', (req, res) => {
-      res.render('registerError')
+  app.get('/registererror', (req, res) => {
+      res.render('registererror')
   })
  
-  app.get('/registerUser', (req, res) => {
-      res.render('registerUser')
+  app.get('/registeruser', (req, res) => {
+      res.render('registeruser')
   })
 
 app.post('/register', (req, res ) => {
@@ -65,34 +65,34 @@ app.post('/register', (req, res ) => {
     user.save(err => {
         if(err){
         //   res.status(500).send('ERROR TO REGISTER')
-            return res.render('registerError')
+            return res.render('registererror')
             
            
         } else {
         //   res.status(200).send('REGISTERED USER')
-            return res.render('registerUser')
+            return res.render('registeruser')
             
         }
     })
 })
 
-app.get('/authenticateError', (req, res, next) => {
-    res.render('authenticateError')
+app.get('/authenticateerror', (req, res, next) => {
+    res.render('authenticateerror')
     next()
 })
 
-app.get('/userNotExist', (req, res, next) => {
-    res.render('userNotExist')
+app.get('/usernotexist', (req, res, next) => {
+    res.render('usernotexist')
     next()
 })
 
-app.get('/authenticateCorrectly', (req, res, next) => {
-    res.render('authenticateCorrectly')
+app.get('/authenticatecorrectly', (req, res, next) => {
+    res.render('authenticatecorrectly')
     next()
 })
 
-app.get('/authenticateUserPasswordFalse', (req, res, next) => {
-    res.render('authenticateUserPasswordFalse')
+app.get('/authenticateuserpasswordfalse', (req, res, next) => {
+    res.render('authenticateuserpasswordfalse')
     next()
 })
 
@@ -102,21 +102,21 @@ app.post('/authenticate', (req, res) => {
     User.findOne({username}, (err, user) => {
         if(err){
             // res.status(500).send('ERROR TO AUTHENTICATE')
-            res.render('authenticateError')
+            res.render('authenticateerror')
         } else if(!user){
             // res.status(500).send('USER DOES NOT EXIST')
-            res.render('userNotExist')
+            res.render('usernotexist')
         } else {
             user.isCorrectPassword(password, (err, result) => {
                 if(err){
                     // res.status(500).send('ERROR TO AUTHENTICATE')
-                    res.render('authenticateError')
+                    res.render('authenticateerror')
                 } else if(result){
                     // res.status(200).send('USER AUTHENTICATED CORRECTLY')
-                    res.render('authenticateCorrectly')
+                    res.render('authenticatecorrectly')
                 } else {
                     // res.status(500).send('USER AND/OR PASSWORD INCORRECTLY')
-                    res.render('authenticateUserPasswordFalse')
+                    res.render('authenticateuserpasswordfalse')
                 }
             })
         }

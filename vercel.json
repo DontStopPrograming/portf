@@ -11,12 +11,16 @@
             "destination": "/signup.html"
         },
         {
-            "source": "/registerError",
-            "destination": "/registerError.html"
+            "source": "/registererror",
+            "destination": "/registererror.html"
         },
         {
-            "source": "/registerUser",
-            "destination": "/registerUser.html"
+            "source": "/registeruser",
+            "destination": "/registeruser.html"
+        },
+        {
+            "source": "/register",
+            "destination": "/register.html"
         }
     ]
 }
