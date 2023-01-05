@@ -59,7 +59,7 @@ app.get('/', (req, res, next) => {
       res.render('registerUser')
   })
 
-app.post('/signup', (req, res ) => {
+app.post('/register', (req, res ) => {
     const {username, password} = req.body
     const user = new User({username, password})
     user.save(err => {
@@ -67,7 +67,6 @@ app.post('/signup', (req, res ) => {
         //   res.status(500).send('ERROR TO REGISTER')
             return res.render('registerError')
             
-        
            
         } else {
         //   res.status(200).send('REGISTERED USER')
@@ -77,22 +76,47 @@ app.post('/signup', (req, res ) => {
     })
 })
 
+app.get('/authenticateError', (req, res, next) => {
+    res.render('authenticateError')
+    next()
+})
+
+app.get('/userNotExist', (req, res, next) => {
+    res.render('userNotExist')
+    next()
+})
+
+app.get('/authenticateCorrectly', (req, res, next) => {
+    res.render('authenticateCorrectly')
+    next()
+})
+
+app.get('/authenticateUserPasswordFalse', (req, res, next) => {
+    res.render('authenticateUserPasswordFalse')
+    next()
+})
+
 app.post('/authenticate', (req, res) => {
     const {username, password} = req.body
 
     User.findOne({username}, (err, user) => {
         if(err){
-            res.status(500).send('ERROR TO AUTHENTICATE')
+            // res.status(500).send('ERROR TO AUTHENTICATE')
+            res.render('authenticateError')
         } else if(!user){
-            res.status(500).send('USER DOES NOT EXIST')
+            // res.status(500).send('USER DOES NOT EXIST')
+            res.render('userNotExist')
         } else {
             user.isCorrectPassword(password, (err, result) => {
                 if(err){
-                    res.status(500).send('ERROR TO AUTHENTICATE')
+                    // res.status(500).send('ERROR TO AUTHENTICATE')
+                    res.render('authenticateError')
                 } else if(result){
-                    res.status(200).send('USER AUTHENTICATED CORRECTLY')
+                    // res.status(200).send('USER AUTHENTICATED CORRECTLY')
+                    res.render('authenticateCorrectly')
                 } else {
-                    res.status(500).send('USER AND/OR PASSWORD INCORRECTLY')
+                    // res.status(500).send('USER AND/OR PASSWORD INCORRECTLY')
+                    res.render('authenticateUserPasswordFalse')
                 }
             })
         }
