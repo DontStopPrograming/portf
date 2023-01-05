@@ -8,19 +8,19 @@
         },
         {
             "source": "/signup",
-            "destination": "/signup.html"
+            "destination": "/public/html/signup.html"
         },
         {
             "source": "/registererror",
-            "destination": "/registerError.html"
+            "destination": "/public/html/registerError.html"
         },
         {
             "source": "/registeruser",
-            "destination": "/registerUser.html"
+            "destination": "/public/html/registerUser.html"
         },
         {
             "source": "/register",
-            "destination": "/register.html"
+            "destination": "/public/html/register.html"
         }
     ]
 }
