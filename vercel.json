@@ -12,11 +12,11 @@
         },
         {
             "source": "/registererror",
-            "destination": "/registererror.html"
+            "destination": "/registerError.html"
         },
         {
             "source": "/registeruser",
-            "destination": "/registeruser.html"
+            "destination": "/registerUser.html"
         },
         {
             "source": "/register",
