@@ -46,8 +46,9 @@ app.get('/', (req, res, next) => {
     next()
 })
 
- app.get('/signup', (req, res) => {
+ app.get('/signup', (req, res, next) => {
      res.render('signup')
+     next()
  })
 
   app.get('/registerError', (req, res) => {
@@ -58,14 +59,14 @@ app.get('/', (req, res, next) => {
       res.render('registerUser')
   })
 
-app.post('/signup', (req, res) => {
+app.post('/signup', (req, res ) => {
     const {username, password} = req.body
     const user = new User({username, password})
-
     user.save(err => {
         if(err){
         //   res.status(500).send('ERROR TO REGISTER')
             return res.render('registerError')
+            
         
            
         } else {

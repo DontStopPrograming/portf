@@ -8,15 +8,15 @@
         },
         {
             "source": "/signup",
-            "destination": "/public/html/signup.html"
+            "destination": "/signup.html"
         },
         {
             "source": "/registerError",
-            "destination": "/public/html/registerError.html"
+            "destination": "/registerError.html"
         },
         {
             "source": "/registerUser",
-            "destination": "/public/html/registerUser.html"
+            "destination": "/registerUser.html"
         }
     ]
 }
