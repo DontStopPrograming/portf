@@ -8,7 +8,7 @@
         },
         {
             "source": "/signup",
-            "destination": "/signup.html"
+            "destination": "/signup"
         },
         {
             "source": "/registererror",
