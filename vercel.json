@@ -5,22 +5,7 @@
         {
             "source": "/home",
             "destination": "/"
-        },
-        {
-            "source": "/signup",
-            "destination": "./public/html/signup.html"
-        },
-        {
-            "source": "/registererror",
-            "destination": "./public/html/registerError.html"
-        },
-        {
-            "source": "/registeruser",
-            "destination": "./public/html/registerUser.html"
-        },
-        {
-            "source": "/register",
-            "destination": "/register"
         }
+       
     ]
 }
