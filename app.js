@@ -51,15 +51,23 @@ app.get('/', (req, res, next) => {
      next()
  })
 
-  app.get('/registererror', (req, res) => {
-      res.render('registererror')
-  })
  
-  app.get('/registeruser', (req, res) => {
-      res.render('registeruser')
-  })
-
-app.post('/register', (req, res ) => {
+ app.get('/registererror', (req, res, next) => {
+     res.render('registererror')
+     next()
+    })
+    
+    app.get('/registeruser', (req, res, next) => {
+        res.render('registeruser')
+        next()
+    })
+    
+    app.get('/register', (req, res, next) => {
+       res.render('register')
+       next()
+    })
+    
+app.post('/register', (req, res) => {
     const {username, password} = req.body
     const user = new User({username, password})
     user.save(err => {
@@ -94,6 +102,11 @@ app.get('/authenticatecorrectly', (req, res, next) => {
 
 app.get('/authenticateuserpasswordfalse', (req, res, next) => {
     res.render('authenticateuserpasswordfalse')
+    next()
+})
+
+app.get('/authenticate', (req, res, next) => {
+    res.render('authenticate')
     next()
 })
 
