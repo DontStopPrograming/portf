@@ -14,11 +14,11 @@
             "destination": "/public/html/register"
         },
         {
-            "source": "/register",
+            "source": "/registererror",
             "destination": "/public/html/registererror.html"
         },
         {
-            "source": "/register",
+            "source": "/registeruser",
             "destination": "/public/html/registeruser.html"
         }
        
