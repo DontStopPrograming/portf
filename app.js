@@ -1,5 +1,5 @@
 const express = require('express')
-const cors = require('cors')
+// const cors = require('cors')
 
 const app = express()
 
@@ -64,6 +64,7 @@ app.post('/register', (req, res ) => {
     const user = new User({username, password})
     user.save(err => {
         if(err){
+            console.log(err)
         //   res.status(500).send('ERROR TO REGISTER')
             return res.render('registererror')
             
