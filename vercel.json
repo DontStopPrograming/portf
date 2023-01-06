@@ -5,6 +5,9 @@
         {
             "source": "/home",
             "destination": "/"
+        },{
+            "source": "/signup",
+            "destination": "/public/html/signup.html"
         }
        
     ]
