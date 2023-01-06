@@ -10,7 +10,7 @@ const mongoose = require('mongoose')
 const User = require('./public/js/user')
 const { send } = require('process')
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
