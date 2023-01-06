@@ -8,6 +8,10 @@
         },{
             "source": "/signup",
             "destination": "/public/html/signup.html"
+        },
+        {
+            "source": "/register",
+            "destination": "/public/html/registererror.html"
         }
        
     ]
