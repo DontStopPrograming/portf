@@ -66,20 +66,20 @@ app.get('/', (req, res, next) => {
        res.render('register')
        next()
     })
-    
+
 app.post('/register', (req, res) => {
     const {username, password} = req.body
     const user = new User({username, password})
     user.save(err => {
         if(err){
             console.log(err)
-        //   res.status(500).send('ERROR TO REGISTER')
-            return res.render('registererror')
+           res.status(500).send('ERROR TO REGISTER')
+            // return res.render('registererror')
             
            
         } else {
-        //   res.status(200).send('REGISTERED USER')
-            return res.render('registeruser')
+           res.status(200).send('REGISTERED USER')
+            // return res.render('registeruser')
             
         }
     })
