@@ -15,11 +15,11 @@
         },
         {
             "source": "/register",
-            "destination": "/public/html/registererror.html"
+            "destination": "/public/html/registerError.html"
         },
         {
             "source": "/register",
-            "destination": "/public/html/registeruser.html"
+            "destination": "/public/html/registerUser.html"
         }
        
     ]
