@@ -1401,6 +1401,10 @@ span {
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 @media screen and (max-width: 800px) {
+  #carta p {
+    color: #0984ff;
+  }
+
   #sectionOne {
     padding: 1rem;
     display: grid;
@@ -1589,6 +1593,11 @@ span {
 /*RESPONSIVE 500 PX */
 /*RESPONSIVE 500 PX */
 @media screen and (max-width: 500px) {
+
+  #carta p {
+    color: #0984ff;
+  }
+  
   #sectionOne {
     height: 60vh;
     padding: 1rem;
