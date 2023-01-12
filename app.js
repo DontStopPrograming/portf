@@ -5,7 +5,7 @@ const app = express()
 
 // const mysql = require('mysql')
 
-const path = require('path')
+// const path = require('path')
 // const hbs = require('express-handlebars')
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
