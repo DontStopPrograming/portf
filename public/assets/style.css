@@ -530,12 +530,14 @@ img#imgder.circle {
     opacity: 0;
   }
 }
+
 #carta p {
   color: #0984ff;
 }
 
 .jscenter {
   position: absolute;
+  color: #0984ff;
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -616,6 +618,7 @@ img#imgder.circle {
 }
 .jscenterleft {
   position: absolute;
+  color: #0984ff;
   width: 30px;
   height: 30px;
   opacity: 0;
@@ -664,6 +667,7 @@ img#imgder.circle {
 }
 .jscenterright {
   position: absolute;
+  color: #0984ff;
   width: 30px;
   height: 30px;
   opacity: 0;
@@ -712,6 +716,7 @@ img#imgder.circle {
 }
 .jsleft {
   position: absolute;
+  color: #0984ff;
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -760,6 +765,7 @@ img#imgder.circle {
 }
 .jsright {
   position: absolute;
+  color: #0984ff;
   width: 50px;
   height: 50px;
   opacity: 0;
@@ -1597,7 +1603,7 @@ span {
   #carta p {
     color: #0984ff;
   }
-  
+
   #sectionOne {
     height: 60vh;
     padding: 1rem;
