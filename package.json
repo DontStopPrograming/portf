@@ -20,7 +20,6 @@
     "ejs": "3.1.8",
     "express": "4.18.2",
     "express-handlebars": "6.0.6",
-    "mongoose": "6.8.0",
-    "vercel": "19.1.2"
+    "mongoose": "6.8.0"
   }
 }

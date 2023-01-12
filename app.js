@@ -3,12 +3,15 @@ const express = require('express')
 
 const app = express()
 
+// const mysql = require('mysql')
+
 const path = require('path')
 // const hbs = require('express-handlebars')
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 const User = require('./public/js/user')
 const { send } = require('process')
+const user = require('./public/js/user')
 
 // app.use(cors())
 app.use(express.json())
@@ -31,8 +34,6 @@ mongoose.set('strictQuery', true)
      .then(() => console.log('CONECTED TO MONGODB'))
      .catch((error) => console.error(error))
 
-
-
 // mongoose.connect(MONGODB_URI, function(err){
 //     if(err) {
 //         throw err
@@ -52,7 +53,7 @@ app.get('/', (req, res, next) => {
  })
 
  
- app.get('/registererror', (req, res, next) => {
+    app.get('/registererror', (req, res, next) => {
      res.render('registererror')
      next()
     })
@@ -62,7 +63,7 @@ app.get('/', (req, res, next) => {
         next()
     })
     
-    app.get('/register', (req, res, next) => {
+app.get('/register', (req, res, next) => {
        res.render('register')
        next()
     })
@@ -72,14 +73,13 @@ app.post('/register', (req, res) => {
     const user = new User({username, password})
     user.save(err => {
         if(err){
-            console.log(err)
-           res.status(500).send('ERROR TO REGISTER')
-            // return res.render('registererror')
+        //  res.status(500).send('ERROR TO REGISTER')
+            return res.render('registererror')
             
            
         } else {
-           res.status(200).send('REGISTERED USER')
-            // return res.render('registeruser')
+        //  res.status(200).send('REGISTERED USER')
+            return res.render('registeruser')
             
         }
     })
@@ -97,6 +97,7 @@ app.get('/usernotexist', (req, res, next) => {
 
 app.get('/authenticatecorrectly', (req, res, next) => {
     res.render('authenticatecorrectly')
+    
     next()
 })
 

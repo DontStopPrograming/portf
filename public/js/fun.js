@@ -85,3 +85,11 @@ obs.observe(aniScss)
 obs.observe(aniTy)
 obs.observe(aniReact)
 obs.observe(aniAws)
+
+
+const btnSwitch = document.querySelector('#switch')
+
+btnSwitch.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+    btnSwitch.classList.toggle('active')
+})

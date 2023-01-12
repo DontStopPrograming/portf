@@ -15,6 +15,15 @@
 <body>
   
     <section id = "sectionOne">
+        <div class = "centradoDark" >
+            <nav>
+                <button class = "switch" id = "switch">  
+                    <span> <i class="fa-regular fa-sun"></i></span>
+                    <span> <i class="fa-solid fa-moon"></i> </span>
+                
+                </button>
+            </nav>
+        </div>
        <div id = "izq">
             <h1> Hey!</h1>
             <h2> Welcome to my profile</h2>
@@ -136,7 +145,10 @@
             <p> Peru - Lima Pan. Norte</p>
             <img src="./public/image/location.png" alt="">
         </div>
-        <form id = "formulario" action="/authenticate" method = "POST">
+
+     
+        
+        <form id = "formulario" name = "formulario" action="/authenticate" method = "POST">
             <h2> Contact me</h2>
             <div class = "section">
                 <div class = "title"></div>
@@ -154,10 +166,17 @@
             </div>
             
         </form>
+
+        <div id = "version">
+            <p id = "versionLetra"> v.1.0.0 in construction</p>
+        </div>
     </section>
 
     <script src = "./public/js/fun.js"> </script>
     <script src = "./public/js/user.js"></script>
     <script src = "../app.js"> </script>
+    <script src = "./public/js/authenty.js"> </script>
+
+    <script src="https://kit.fontawesome.com/f52e7a0686.js" crossorigin="anonymous"></script>
 </body>
 </html>
