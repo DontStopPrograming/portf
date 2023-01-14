@@ -52,6 +52,10 @@ app.get('/', (req, res, next) => {
      next()
  })
 
+ app.get('/resume', (req, res, next) => {
+    app.render('resume')
+    next()
+ })
  
     app.get('/registererror', (req, res, next) => {
      res.render('registererror')

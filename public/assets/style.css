@@ -20,6 +20,11 @@
   color: rgb(205, 205, 205);
 }
 
+#containerCurri {
+  display: grid;
+  place-items: center;
+}
+
 section {
   max-width: 99vw;
 }
@@ -927,7 +932,8 @@ img#imgder.circle {
 
 #dowload {
   grid-area: dowload;
-  font-size: 1rem;
+  padding: 5px;
+  font-size: 5rem;
   background: transparent;
   box-shadow: 1px 1px 1px 1px #fff;
 }
@@ -1454,6 +1460,15 @@ span {
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 @media screen and (max-width: 800px) {
+  #dowload {
+    grid-area: dowload;
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    font-size: 1rem;
+    background: transparent;
+    box-shadow: 1px 1px 1px 1px #fff;
+  }
 
   .sectionSignup {
     display: grid;
