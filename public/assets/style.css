@@ -20,6 +20,27 @@
   color: rgb(205, 205, 205);
 }
 
+#formSend {
+  display: grid;
+  place-items: center;
+}
+
+#formSend label {
+ margin-left: -100px;
+ padding: 10px;
+ font-size: 2rem;
+ color: #0984ff;
+}
+
+#formSend input {
+  border: 1px solid #0984ff;
+}
+
+#formSend .btn {
+  margin-top: 10px;
+  background: #0984ff;
+}
+
 #containerCurri {
   display: grid;
   place-items: center;
