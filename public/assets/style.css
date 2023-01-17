@@ -26,7 +26,7 @@
 }
 
 #formSend label {
- margin-left: -100px;
+ margin-left: -460px;
  padding: 10px;
  font-size: 2rem;
  color: #0984ff;
@@ -36,10 +36,21 @@
   border: 1px solid #0984ff;
 }
 
+textarea {
+  
+  border: 1px solid #0984ff;
+  width: 582px;
+  height: 100px;
+  resize: none;  
+    
+}
+
 #formSend .btn {
   margin-top: 10px;
   background: #0984ff;
 }
+
+
 
 #containerCurri {
   display: grid;
@@ -1481,6 +1492,36 @@ span {
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 /* THIS IS MEDIA QUERY RESPONSIVE DESIGN */
 @media screen and (max-width: 800px) {
+  #formSend {
+    display: grid;
+    place-items: center;
+  }
+  
+  #formSend label {
+   margin-left: -280px;
+   padding: 10px;
+   font-size: 2rem;
+   color: #0984ff;
+  }
+  
+  #formSend input {
+    border: 1px solid #0984ff;
+  }
+  
+  textarea {
+    border: 1px solid #0984ff;
+    width: 400px;
+    height: 100px;
+    resize: none;  
+      
+  }
+  
+  #formSend .btn {
+    margin-top: 10px;
+    background: #0984ff;
+  }
+  
+  
   #dowload {
     grid-area: dowload;
     display: grid;
@@ -1701,7 +1742,36 @@ span {
 /*RESPONSIVE 500 PX */
 /*RESPONSIVE 500 PX */
 @media screen and (max-width: 500px) {
-
+  #formSend {
+    display: grid;
+    place-items: center;
+  }
+  
+  #formSend label {
+   margin-left: -100px;
+   padding: 10px;
+   font-size: 2rem;
+   color: #0984ff;
+  }
+  
+  #formSend input {
+    border: 1px solid #0984ff;
+  }
+  
+  textarea {
+  
+    border: 1px solid #0984ff;
+    width: 218px;
+    height: 100px;
+    resize: none;  
+      
+  }
+  
+  #formSend .btn {
+    margin-top: 10px;
+    background: #0984ff;
+  }
+  
 
   .sectionSignup {
     display: grid;
