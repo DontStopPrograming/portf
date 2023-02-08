@@ -1235,6 +1235,10 @@ img#imgder.circle {
   border-radius: 20px;
 }
 
+.slider img {
+  z-index: 2;
+}
+
 div.slider::before{
   width: 0;
   height: 0;
