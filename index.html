@@ -8,176 +8,204 @@
     <title> </title>
     <link rel="stylesheet" href = "/public/assets/style.css" >  
     
-</head>
-
-<body oncontextmenu = "return false">
-  
-    <section id = "sectionOne">
-        <div class = "centradoDark" >
-            <nav>
-                <button class = "switch" id = "switch">  
-                    <span> <i class="fa-regular fa-sun"></i></span>
-                    <span> <i class="fa-solid fa-moon"></i> </span>
-                
-                </button>
-            </nav>
-        </div>
-       <div id = "izq">
-            <h1> Hey!</h1>
-            <h2> Welcome to my profile</h2>
-        </div>
-        <div id = "der">
-            <img id = "imgder" src="./public/image/lentes.png" alt="">
-        </div>
-       <div id = "presentacion">
-            <h1> Im Developer</h1>
-            <p> My name is John Nazario</p>
-       </div>
-    </section>
-
-    <section id = "sectionTwo">
-        <div id = "centro">
-            <p id = "cero"> I have 1 year learning programing with knowledge in technologies:</p>
-            <p id = "uno" > 1 year learning programing</p>
-            
-        </div>
-    </section>
-
-    <section id = "sectionThree" class = "sectionThree">
-        <div id = "javascript" class = "ja">
-            <h1> Javascript</h1>
-       </div>
-   
-       <div id = "css" class = "ja">
-           <h1> CSS</h1>
-       </div>
-       <div id = "html" class = "ja">
-           <h1> HTML</h1>
-       </div>
-
-   
-    <div id = "node" class = "subsection"> <img src="../public/image/node.png" alt="">  </div>
-    <div id = "sql" class = "subsection"> <img src="../public/image/sql.png" alt=""></div>
-    <div id = "scss" class = "subsection"> <img src="../public/image/sass.png" alt=""> </div>
-    <div id = "typescript" class = "sin"> 
-        <img src="../public/image/ts.png" alt="">
-        <div class = "barra">
-         <div id = "threethb" class = "ba"> <p> learning</p> </div>
-     </div>
-    </div>
-    <div id = "react" class = "sin"> 
-        <img src="../public/image/react.png" alt="">
-        <div class = "barra">
-         <div id = "threethb" class = "ba"> <p> learning</p> </div>
-     </div>
-    </div>
-    <div id = "aws" class = "sin">  
-        <img src="../public//image/aws.png" alt="">
-        <div class = "barra">
-         <div id = "threethb" class = "ba"> <p> learning</p> </div>
-     </div>
-    </div>
-   
-       
-        </section>
+    
     
 
-    <section id = "sectionFour">
+    <!-- Sassy Frass font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id = "header">
+        <img src="/public/image/lentes.png" alt="">
+        <h1> Hello! Im Developer</h1>
+        <p id = "name"> My name is John Nazario</p>
+        <p id = "jap"> フアン・ナザリオ</p>
+        <p id = "w"> Welcome my profile</p>
+        <div id = "redes">
+            <img src="/public/image/you.png" alt="">
+            <img src="/public/image/twich.png" alt="">
+            <img src="/public/image/face.png" alt="">
+            <img src="/public/image/twi.png" alt="">
+            <img src="/public/image/tik.png" alt="">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a href="#header"> Inicio </a></li>
+            <li> <a href="#sectionOne"> Projects</a></li>
+            <li> <a href="#sectionTwo"> Technologies</a></li>
+            <li> <a href="#sectionThree"> About me</a></li>
+            <li> <a href="#sectionFour"> Resume</a></li>
+            <li> <a href="#sectionFive"> Contact me</a></li>
+           
+            
+        </ul>
+    </nav>
+  
+    <main>
+        <section id = "sectionOne">
+            
+        <div id = "projects" class = "container">
+            <img id = "pro1" class = "image1" src="/public/image/grid.JPG" data-slider = "/public/image/game1.jpg,/public/image/game2.jpg,/public/image/game3.jpg" data-description = "My first page is oriented to videogames, the world of videogames as it has progressed up to now, and the positive point of view it generates."  alt="">
+            <img id = "pro2" class = "image2" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro3" class = "image3" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro4" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro5" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro6" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro7" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            <img id = "pro8" src="/public/image/comingSoon.jpg" data-slider = "" data-description = "Not Avaliable" alt="">
+            </div>
+
+            <div class="modal">
+                <div class="modal-content">
+                  <p class="description"></p>
+                  <div class="slider">
+                    <img class="slide" />
+                   <img class = "prev" src="/public/image/cero.png" alt="">
+                    <img class="next" src="/public/image/cero.png" alt="">
+                    <a class = "goToLink" href=""> Go to link</a>
+                  </div>
+                  <button class="close"> X</button>
+                </div>
+              </div>
+
+        </section>
+    
+        <section id = "sectionTwo">
+           <div id = "technologies"> 
                 
+                <p id = "p1"> t</p>
+                <p id = "p11">ech</p>
+                <p id = "p12">nologies</p>
+                <p id = "p2"> that I use </p>
+                <p id = "p3"> and am learning</p>
+                
+            
+                <div id = "techIMG">
+                <img id = "html5" src="/public/image/html.png" alt="">
+                <img id = "jsjs" src="/public/image/jsjs.png" alt="">
+                <img id = "css3" src="/public/image/css.png" alt="">
+                <img id = "sass" src="/public/image/sass.png" alt="">
+                <img src="/public/image/git.png" alt="">
+                <img src="/public/image/mongo.png" alt="">
+                <img src="/public/image/sql.png" alt="">
+                <img src="/public/image/aws.png" alt="">
+                <img src="/public/image/react.png" alt="">
+                <img src="/public/image/type.png" alt="">
+                </div>
+            
+           </div>
+        </section>
+    
+        <section id = "sectionThree" class = "sectionThree">
             <div id = "about">
-                <h1>About me</h1>
-                <p> I like programing, design web, I have 32 years and I live in Peru. Every day its learn something new in this world. <br>
+                <div id = "ab"> </div>
+                <div id = "abo"> </div>
+                
+                <h1 id = "abouth">About me</h1>
+                <p id = "aboutp"> I like programing, design web, I have 32 years and I live in Peru. 
+                    I am oriented to fullstack development. I have one year programing with javascript but I have knowledges of more than 8 years about TI. 
+                    Every day its learn something new in this world. <br>
                 <br>
                 I love sport and as well the videogames. <br>
-                I have studies of Technology informatic of three years, titled in the name of nation. 
+                I have studies of Technology informatic of three years, titled in the name of nation. <br>
+                I am currently working as a freelance in this sector TI.
             </p>
             </div>
-            
-            <div id = "carta">
-                <p class = "jscenter"> JS</p>
-                <p class = "jsleft"> JS</p>
-                <p class = "jsright"> JS</p>
-                <p class = "jscenterleft"> JS</p>
-                <p class = "jscenterright"> JS</p>
+
+            <div id = "aboutIzq">
+                <img src="/public/image/pc.jpg" alt="">
             </div>
-    </section>
-
-    <section id = "sectionFive">
+        </section>
         
-        <div id = "first">
-            <h1> My project - Go to Link</h1>
-        </div>
-        <div id = "second">
-            <h1> Other project in progress...</h1>
-        </div>
-        <div id = "third" class = "progress">
-            <h1> Other project in progress...</h1>
-        </div>
-        <div id = "fourth" class = "progress">
-            <h1> Other project in progress...</h1>
-        </div>
-        <div id = "fiveth" class = "progress">
-            <h1> Other project in progress...</h1>
-        </div>
-        <div id = "sixth" class = "progress">
-            <h1> Other project in progress...</h1>
-        </div>
-    </section>
+    
+        <section id = "sectionFour">
 
-    <section id = "sectionSix">
-        <h1 id = "joh"> Jobs</h1>
-        <p id = "jop" >
-            Position of supervisor of printers in printer company, performing maintenance, repair and installation service.
-        <br> <br> Position of inventory assistant in textile company, information entry, handling excel and word programs.  <br>
-        <br> Position of administrative assistant in a restaurant, customer service, purchase and sale of merchandise. <br>
-        <br> Position of security prevention in hypermarket, merchandise control and personal control. <br>
-        <br> My resume for more details ...</p> 
-        <div id = "dowload" > <a href="/public/html/resume.html" > Details </a>   </div> 
-        
-    </section>
-
-    <section id = "sectionSeven">
-        
-        <div id = "location">
-            <p> Location</p>
-            <p> Peru - Lima Pan. Norte</p>
-            <img src="./public/image/location.png" alt="">
-        </div>
-
-     
-        
-        <form id = "formulario" name = "formulario" action="/authenticate" method = "POST">
-            <h2> Contact me</h2>
-            <div class = "section">
-                <div class = "title"></div>
-                <div class = "field"><input type="text" id = "username" name = "username" placeholder = "username"> </div>
-            </div>
-            
-            <div class = "section">
-                <div class = "title"></div>
-                <div class = "field"><input type="password" id = "password" name = "password" placeholder = "password"></div>
+            <div id = "resume">
+                <h1> Jobs</h1>
+                <p>
+                Position of supervisor of printers in printer company, performing maintenance, repair and installation service.
+            <br> <br> Position of inventory assistant in textile company, information entry, handling excel and word programs.  <br>
+            <br> Position of administrative assistant in a restaurant, customer service, purchase and sale of merchandise. <br>
+            <br> Position of security prevention in hypermarket, merchandise control and personal control. <br>
+            <br> My resume for more details ...</p> 
+            <div id = "dowload" > <a href="/public/html/resume.html" > Details </a>   </div> 
             </div>
 
-            <div class = "section" >
-                <div class = "title"><input id = "botonLogin" type="submit" value = "Login"></div>
-                <div class = "button"><a href="/public/html/signup.html">Register</a></div>
+                <!-- <div id = "carta">
+                    <p class = "jscenter"> JS</p>
+                    <p class = "jsleft"> JS</p>
+                    <p class = "jsright"> JS</p>
+                    <p class = "jscenterleft"> JS</p>
+                    <p class = "jscenterright"> JS</p>
+                </div> -->
+        </section>
+    
+       
+    
+        <section id = "sectionFive">
+
+            <div id = "location">
+                <img src="./public/image/location.png" alt="">
+                <p> LOCATION</p>
+                <p> Peru - Lima Pan. Norte</p>
             </div>
-            
-        </form>
 
-        <div id = "version">
-            <p id = "versionLetra"> v.1.0.1 in construction</p>
-        </div>
+            <div id = "What">
+                <a id = "imgWhat" href="https://wa.me/+51963199983" id = "btn-wsp">
+                    <img src="/public/image/whatsapp.png" alt="">
+                    <p> PHONE NUMBER</p>
+                </a>
+            </div>
+
+            <div id = "contact">
+                <h1 id = "contactMe"> Contact me</h1> <br>
+                <p id = "contactP"> If you have a project in mind and are interested in my web development services, contact me.
+                    I will answer you as soon as possible.</p>
+            </div>
+         
+            <form id = "formulario" name = "formulario" action="/authenticate" method = "POST">
+                
+                <div class = "section">
+                    <div class = "title"></div>
+                    <div class = "field"><input type="text" id = "username" name = "username" placeholder = "username"> </div>
+                </div>
+                
+                <div class = "section">
+                    <div class = "title"></div>
+                    <div class = "field"><input type="password" id = "password" name = "password" placeholder = "password"></div>
+                </div>
+    
+                <div class = "section" >
+                    <div class = "title"><input id = "botonLogin" type="submit" value = "Login"></div>
+                    <div class = "button"><a href="/public/html/signup.html">Register</a></div>
+                </div>
+                
+            </form>
     </section>
+</main>
+    <footer>
+        v.1.0.1 in construction
+        &copy 2023 fvck
+    </footer> 
 
-    <script src = "./public/js/fun.js"> </script>
-    <script src = "./public/js/user.js"></script>
+        
+    <script src = "/public/js/slider.js"></script>
+    <script src = "/public/js/fun.js"> </script>
+    <script src = "/public/js/user.js"></script>
     <script src = "../app.js"> </script>
-    <script src = "./public/js/authenty.js"> </script>
+    <script src = "/public/js/authenty.js"> </script>
+    <script src = "/public/js/interface.js"> </script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         document.oncontextmenu = function(){return false;}
-        </script>
+        </script> -->
 
     <script src="https://kit.fontawesome.com/f52e7a0686.js" crossorigin="anonymous"></script>
 </body>
