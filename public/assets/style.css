@@ -320,31 +320,11 @@ img#imgder.circle {
   transition: 3s ease-in-out;
 }
 
-/* #technologies.theSectionTwoTechnologies {
-  opacity: 1;
-} 
-
-#technologies {
-  opacity: 0;
-}  */
-
 #technologies {
   display: grid;
   place-items: center;
+   
 }
-
-
-/* #techIMG #jsjs{
-  transition: 1s linear;
-  animation: jsjsAni 1s linear;
-  opacity: 1;
-} 
-  @keyframes jsjsAni {
-    0% {
-      transform: scale(9.5) translate(-70%, -50%);
-
-  }
-} */
 
  #techIMG.theTechnologiesImg {
   opacity: 1;
@@ -384,7 +364,10 @@ img#imgder.circle {
   width: 48px;
   height: 48px;
   margin: 20px;
-  }
+  
+  
+}
+ 
 
 #sectionTwo {
   position: relative;
@@ -885,287 +868,7 @@ img#imgder.circle {
 
 
 
-#carta p {
-  color: #0984ff;
-}
 
-.jscenter {
-  position: absolute;
-  color: #0984ff;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  -webkit-animation: cen 8s linear infinite;
-          animation: cen 8s linear infinite;
-}
-
-@-webkit-keyframes cen {
-  0% {
-    opacity: 50%;
-    top: 10%;
-  }
-  20% {
-    opacity: 1;
-    top: 20%;
-    transform: rotate3d(1, 9, 0.5, 9.9rad);
-  }
-  30% {
-    opacity: 1;
-    top: 50%;
-    transform: rotate3d(3, 9, 0.5, 9.9rad);
-  }
-  40% {
-    opacity: 1;
-    top: 50%;
-    transform: rotate3d(6, 9, 0.5, 9.9rad);
-  }
-  50% {
-    opacity: 0;
-    top: 70%;
-    transform: rotate3d(9, 9, 0.5, 5.9rad);
-  }
-  60% {
-    opacity: 0;
-    top: 70%;
-    transform: rotate3d(9, 9, 0.5, 9.9rad);
-  }
-  100% {
-    top: 80%;
-    opacity: 0;
-  }
-}
-
-@keyframes cen {
-  0% {
-    opacity: 50%;
-    top: 10%;
-  }
-  20% {
-    opacity: 1;
-    top: 20%;
-    transform: rotate3d(1, 9, 0.5, 9.9rad);
-  }
-  30% {
-    opacity: 1;
-    top: 50%;
-    transform: rotate3d(3, 9, 0.5, 9.9rad);
-  }
-  40% {
-    opacity: 1;
-    top: 50%;
-    transform: rotate3d(6, 9, 0.5, 9.9rad);
-  }
-  50% {
-    opacity: 0;
-    top: 70%;
-    transform: rotate3d(9, 9, 0.5, 5.9rad);
-  }
-  60% {
-    opacity: 0;
-    top: 70%;
-    transform: rotate3d(9, 9, 0.5, 9.9rad);
-  }
-  100% {
-    top: 80%;
-    opacity: 0;
-  }
-}
-.jscenterleft {
-  position: absolute;
-  color: #0984ff;
-  width: 30px;
-  height: 30px;
-  opacity: 0;
-  -webkit-animation: cenlef 8s linear infinite;
-          animation: cenlef 8s linear infinite;
-}
-
-@-webkit-keyframes cenlef {
-  0% {
-    opacity: 50%;
-    top: 40%;
-    left: 30%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    left: 30%;
-    transform: rotate3d(1, 9, 9.5, 1.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 80%;
-    left: 30%;
-    transform: rotate3d(1, 5, 5.5, 0.5rad);
-  }
-}
-
-@keyframes cenlef {
-  0% {
-    opacity: 50%;
-    top: 40%;
-    left: 30%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    left: 30%;
-    transform: rotate3d(1, 9, 9.5, 1.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 80%;
-    left: 30%;
-    transform: rotate3d(1, 5, 5.5, 0.5rad);
-  }
-}
-.jscenterright {
-  position: absolute;
-  color: #0984ff;
-  width: 30px;
-  height: 30px;
-  opacity: 0;
-  -webkit-animation: cenrig 6s ease infinite;
-          animation: cenrig 6s ease infinite;
-}
-
-@-webkit-keyframes cenrig {
-  0% {
-    opacity: 50%;
-    top: 20%;
-    right: 30%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    right: 30%;
-    transform: rotate3d(1, 9, 0.5, 1.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 80%;
-    right: 30%;
-    transform: rotate3d(1, 9, 5.5, 9.9rad);
-  }
-}
-
-@keyframes cenrig {
-  0% {
-    opacity: 50%;
-    top: 20%;
-    right: 30%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    right: 30%;
-    transform: rotate3d(1, 9, 0.5, 1.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 80%;
-    right: 30%;
-    transform: rotate3d(1, 9, 5.5, 9.9rad);
-  }
-}
-.jsleft {
-  position: absolute;
-  color: #0984ff;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  -webkit-animation: lef 4s linear infinite;
-          animation: lef 4s linear infinite;
-}
-
-@-webkit-keyframes lef {
-  0% {
-    opacity: 50%;
-    top: 10%;
-    left: 5%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    left: 5%;
-    transform: rotate3d(1, 9, 0.5, 5.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 100%;
-    left: 5%;
-    transform: rotate3d(3, 9, 0.5, 5.9rad);
-  }
-}
-
-@keyframes lef {
-  0% {
-    opacity: 50%;
-    top: 10%;
-    left: 5%;
-  }
-  50% {
-    opacity: 1;
-    top: 70%;
-    left: 5%;
-    transform: rotate3d(1, 9, 0.5, 5.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 100%;
-    left: 5%;
-    transform: rotate3d(3, 9, 0.5, 5.9rad);
-  }
-}
-.jsright {
-  position: absolute;
-  color: #0984ff;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  -webkit-animation: rig 5s linear infinite;
-          animation: rig 5s linear infinite;
-}
-
-@-webkit-keyframes rig {
-  0% {
-    opacity: 50%;
-    top: 10%;
-    right: 5%;
-  }
-  50% {
-    opacity: 1;
-    top: 60%;
-    right: 5%;
-    transform: rotate3d(1, 9, 0.5, 9.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 100%;
-    right: 5%;
-    transform: rotate3d(9, 9, 0.5, 9.9rad);
-  }
-}
-
-@keyframes rig {
-  0% {
-    opacity: 50%;
-    top: 10%;
-    right: 5%;
-  }
-  50% {
-    opacity: 1;
-    top: 60%;
-    right: 5%;
-    transform: rotate3d(1, 9, 0.5, 9.9rad);
-  }
-  100% {
-    opacity: 1;
-    top: 100%;
-    right: 5%;
-    transform: rotate3d(9, 9, 0.5, 9.9rad);
-  }
-}
 #imageTwo {
   grid-area: imageTwo;
 }
@@ -1314,13 +1017,16 @@ div.slider::before{
   object-fit: cover;
   opacity: .8;
   transition: .5s ease;
+
 }
 
 #projects img:hover {
-  cursor: crosshair;
+  cursor: pointer;
   width: 300px;
   opacity: 1;
+
 } 
+
 
 
 #joh {
@@ -1506,7 +1212,6 @@ footer {
   top: 80%;
   left: 5%;
   border: 1px solid blue;
-  border-radius: 10px;
   padding: 15px;
   font-size: 1rem;
 }
@@ -1524,7 +1229,6 @@ footer {
   top: 80%;
   left: 18%;
   color: #fff;
-  border-radius: 10px;
   padding: 40px;
   font-size: 1rem;
 }
@@ -1859,11 +1563,138 @@ body {
   font-family: 'system-ui', sans-serif;
 }
 
+
+
 body.dark {
-  background: rgb(0, 0, 0);
+  background: rgb(18, 18, 18);
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark nav{
+  background: rgb(18, 18, 18);
+  transition: .4 ease all;
+  
+}
+
+body.dark nav p{
+  filter: brightness(100%);
+  transition: .4 ease all;
+  
+}
+
+body.dark p{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark h1 {
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark a p{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark #header{
+  background-color: rgb(18, 18, 18);
+  transition: .4 ease all;
+  color: #59ff00;
+  
+}
+
+body.dark #header #redes img:hover{
+  transition: .4 ease all;
+  background-color: orange;
+  
+}
+
+
+
+body.dark #header #w{
+  transition: .4 ease all;
+  color: orange;
+  
+}
+
+
+
+body.dark #sectionOne #projects img:hover{
+  transition: .4 ease all;
+  opacity: 1;
+  animation: aAni 5s ease;
+} 
+  @keyframes aAni {
+    0% {
+      box-shadow: 2px 5px 5px 5px rgb(0, 255, 0) ;
+    }
+  }
+
+
+body.dark #sectionTwo p{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+
+body.dark #sectionThree h1{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+  body.dark #sectionThree p{
   transition: .4 ease all;
   color: #fff;
 }
+
+body.dark #sectionFour h1{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+  body.dark #sectionFour p{
+  transition: .4 ease all;
+  color: #fff;
+}
+
+body.dark #sectionFour #resume #dowload a{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+
+body.dark #sectionFive {
+  transition: .4 ease all;
+  background: rgb(15, 23, 42);
+}
+
+body.dark #sectionFive h1{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark #sectionFive .section .button a{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark #sectionFive #location p{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark #sectionFive #What a p{
+  transition: .4 ease all;
+  color: #59ff00;
+}
+
+body.dark #header img{
+  
+  transition: .4 ease all;
+  
+}
+
 
 .centradoDark {
   max-width: 1000px;
@@ -1882,11 +1713,16 @@ body.dark {
   background: linear-gradient( red 5%, black);
   border-radius: 1000px;
   border: none;
-  position: relative;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: 30%;
   cursor: pointer;
   display: flex;
   outline: none;
   margin-left: 1%;
+  z-index: 4;
 }
 
 .switch::after {
@@ -2010,11 +1846,11 @@ header img {
 
 header h1 {
   position: absolute;
-  top: 1%;
-  left: 2%;
+  top: 5%;
+            left: 60%;
   -webkit-text-stroke-color: rgb(255, 255, 255);
   -webkit-text-stroke-width: 1px;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 #name {
@@ -2280,7 +2116,7 @@ header h1 {
         left: 1%;
         font-size: 1rem;
         text-align: justify;
-        z-index: 1;
+        z-index: 3;
       }
       
       #aboutIzq {
@@ -2290,7 +2126,7 @@ header h1 {
       #aboutIzq img {
         position: relative;
         top: 100%;
-        left: -100%;
+        left: -90%;
         width: 300px;
         height: 200px;
         z-index: 3;
@@ -2304,16 +2140,16 @@ header h1 {
         width: 350px;
         height: 400px;
         background: rgb(99, 102, 241);
-        z-index: 1;
+        z-index: 2;
       
       } 
       
       #abo {
         position: absolute;
-        top: 550px;
-        left: 10%;
-        width: 300px;
-        height: 170px;
+        top: 10%;
+        left: 70%;
+        width: 200px;
+        height: 710px;
         background: #000;
         z-index: 1;
       
@@ -2353,12 +2189,12 @@ header h1 {
         background: #fff;
         font-family: 'Ubuntu',sans-serif;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-          '.'
-          'formulario'
-          'contact';
+          '. .'
+          'formulario formulario'
+          'contact contact';
       
       }
       
@@ -2457,7 +2293,7 @@ header h1 {
           top: 80%;
           left: 12%;
           background: #003366;
-          border-radius: 10px;
+          
           width: 120px;
           height: 120px;
           font-size: 1rem;
@@ -2479,7 +2315,7 @@ header h1 {
           top: 740px;
           left: 50%;
           color: #fff;
-          border-radius: 10px;
+          
           padding: 20px;
           font-size: 1rem;
           width: 110px;
@@ -2506,7 +2342,32 @@ header h1 {
           margin: 0;
           }
         
+          .switch {
+           position: absolute;
+           top: 10%;
+            left: 70%;
+           
+            z-index: 4;
+          }
 
+          #technologies p {
+            font-size: 3rem;
+          } 
+
+          
+  #p3 {
+    opacity: 0;
+    font-size: 10rem;
+    top: 10%;
+    left: 80%;
+  }
+
+  
+#projects img:hover {
+  cursor: pointer;
+  
+
+} 
       }
   
 
