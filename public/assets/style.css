@@ -2442,9 +2442,9 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 45%;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
   border-radius: none;
   color: rgb(100, 255, 100);
