@@ -2428,14 +2428,13 @@ div.slider::before{
 .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 120%;
   width: 20px;
   z-index: 1;
   cursor: pointer;
   border-radius: none;
   background: #fff;
 }
-
 
 .prev {
   left: 40%;
@@ -2454,7 +2453,7 @@ div.slider::before{
   cursor: pointer;
   background: rgb(15, 23, 42);
   color: #000;
-  font-size: 1rem;
+  
   opacity: 50%;
 
 }
