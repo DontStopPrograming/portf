@@ -2407,6 +2407,8 @@ header h1 {
   grid-area: slider;
   display: grid;
   justify-content: center;
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
 }
 
@@ -2442,7 +2444,7 @@ div.slider::before{
 .goToLink {
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 45%;
   z-index: 1;
   cursor: pointer;
   border-radius: none;
