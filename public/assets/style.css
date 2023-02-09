@@ -2142,7 +2142,7 @@ header h1 {
         position: absolute;
         top: 10%;
         left: 60%;
-        width: 400px;
+        width: 300px;
         height: 710px;
         background: #000;
         z-index: 2;
@@ -2438,7 +2438,7 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  bottom: 100%;
+  top: 50%;
   
   z-index: 1;
   cursor: pointer;
@@ -2476,7 +2476,7 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  bottom: 100%;
+  top: 50%;
   
   z-index: 1;
   cursor: pointer;
