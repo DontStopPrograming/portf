@@ -2428,7 +2428,8 @@ div.slider::before{
 .prev,
 .next {
   position: absolute;
-  top: 80%;
+  top: 110%;
+  bottom: 0;
   width: 20px;
   z-index: 1;
   cursor: pointer;
@@ -2438,8 +2439,8 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  top: 80%;
-  
+  top: 90%;
+  bottom: 0;
   z-index: 1;
   cursor: pointer;
   border-radius: none;
