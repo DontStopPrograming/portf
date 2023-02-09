@@ -2388,8 +2388,8 @@ header h1 {
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   padding: 20px;
 }
 
@@ -2436,6 +2436,16 @@ div.slider::before{
   background: #fff;
 }
 
+.goToLink {
+  position: absolute;
+  top: 50%;
+  
+  z-index: 1;
+  cursor: pointer;
+  border-radius: none;
+  color: rgb(100, 255, 100);
+}
+
 .prev {
   left: 40%;
 }
@@ -2448,12 +2458,12 @@ div.slider::before{
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   background: rgb(15, 23, 42);
   color: #000;
-  
+  font-size: 2rem;
   opacity: 50%;
 
 }
@@ -2464,15 +2474,8 @@ div.slider::before{
   background: rgb(15, 23, 42);
 }
 
-.goToLink {
-  position: absolute;
-  top: 50%;
-  
-  z-index: 1;
-  cursor: pointer;
-  border-radius: none;
-  color: rgb(100, 255, 100);
-}
+
+
 
       }
   
