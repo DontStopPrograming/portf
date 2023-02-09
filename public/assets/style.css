@@ -2402,6 +2402,7 @@ header h1 {
 }
 
 .slider {
+  position: relative;
   background: #fff;
   grid-area: slider;
   display: grid;
