@@ -2438,7 +2438,7 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   
   z-index: 1;
   cursor: pointer;
@@ -2476,7 +2476,7 @@ div.slider::before{
 
 .goToLink {
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   
   z-index: 1;
   cursor: pointer;
