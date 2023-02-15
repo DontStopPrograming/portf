@@ -1051,7 +1051,7 @@ header {
 
   .nav-menu ul li {
     top: 0;
-    /* padding: 2rem; */
+    padding: 1rem;
     display: flex;
     justify-content: center;
     margin: 0;
