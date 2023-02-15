@@ -1051,6 +1051,7 @@ header {
 
 
   .nav-menu ul li {
+    position: fixed;
     top: 0;
     padding: 2rem;
     display: flex;
