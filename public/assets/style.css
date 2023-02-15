@@ -1023,14 +1023,7 @@ header {
 
  
     header {
-      background-color: rgb(15, 23, 42);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: .5rem 2rem;
       position: sticky;
-      top: 0;
-      
       z-index: 999;
     }
 
