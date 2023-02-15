@@ -1022,11 +1022,7 @@ header {
     }
 
  
-    header {
-      position: sticky;
-      z-index: 999;
-    }
-
+    
   .checkbtn {
     display: block;
   }
@@ -1055,7 +1051,7 @@ header {
 
   .nav-menu ul li {
     top: 0;
-    padding: 2rem;
+    /* padding: 2rem; */
     display: flex;
     justify-content: center;
     margin: 0;
