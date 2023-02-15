@@ -1501,16 +1501,10 @@ header {
     display: block;
     position: fixed;
     top: 70px;
-    left: -50%;
+    left: 50%;
     width: 50%;
     height: 100vh;
     right: 0;
-    
-  }
-
-  .nav-menu ul li a {
-    position: absolute;
-    left: 50%;
     
   }
 
