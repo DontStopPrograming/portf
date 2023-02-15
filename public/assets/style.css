@@ -1067,12 +1067,8 @@ header {
   }
 
   #check:checked ~ ul {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     opacity: 90%;
     transition: all .1s;
     
