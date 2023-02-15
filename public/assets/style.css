@@ -1509,8 +1509,9 @@ header {
   }
 
   .nav-menu ul li a {
-    display: grid;
-    place-items: center;
+    position: absolute;
+    left: 50%;
+    
   }
 
   .nav-menu ul li {
