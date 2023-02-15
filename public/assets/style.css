@@ -1505,11 +1505,11 @@ header {
     width: 50%;
     height: 100vh;
     right: 0;
-    padding: 5px;
+    
   }
 
   .nav-menu ul li {
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     margin: 0;
