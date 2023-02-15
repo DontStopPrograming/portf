@@ -1065,8 +1065,8 @@ header {
 
   #check:checked ~ ul {
     top: 0;
-    width: 100%;
-    min-height: 100vh;
+    max-width: 100%;
+    min-height: 100%;
     background: #000000;
     opacity: 90%;
     left: 0;
