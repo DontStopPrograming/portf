@@ -375,7 +375,7 @@ header {
     }
     
     .grid-item {
-      background-color: #fff;
+      background-color: rgb(203, 213, 225);
       border-radius: 10px;
       box-shadow: 2px 2px 5px rgb(99, 102, 241);
       text-align: center;
