@@ -1036,6 +1036,7 @@ header {
     cursor: pointer;
   }
 
+  
   .nav-menu ul {
     display: block;
     position: fixed;
@@ -1062,8 +1063,11 @@ header {
   }
 
   #check:checked ~ ul {
+    top: 0;
+    background: #000000;
+    opacity: 90%;
     left: 0;
-    transition: all .20s;
+    transition: all .1s;
   }
 
   #check:not(:checked) ~ ul {
@@ -1500,8 +1504,9 @@ header {
   .nav-menu ul {
     display: block;
     position: fixed;
+    
     top: 70px;
-    left: -50%;
+    left: 50%;
     height: 100vh;
     right: 0;
     
