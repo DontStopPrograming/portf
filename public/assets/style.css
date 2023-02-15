@@ -1513,6 +1513,7 @@ header {
   .nav-menu ul li {
     padding: 1rem;
     display: flex;
+    left: 50%;
     justify-content: center;
     margin: 0;
   }
