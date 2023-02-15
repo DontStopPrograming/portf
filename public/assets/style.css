@@ -1501,7 +1501,7 @@ header {
     display: block;
     position: fixed;
     top: 70px;
-    left: 50%;
+    
     width: 50%;
     height: 100vh;
     right: 0;
@@ -1516,7 +1516,9 @@ header {
   }
 
   .nav-menu ul li a {
-    padding: 10px;
+    position: fixed;
+    padding: 5px;
+    left: 50%;
   }
 
   .nav-menu ul li:last-child {
