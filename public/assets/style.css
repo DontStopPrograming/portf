@@ -1047,11 +1047,7 @@ header {
     right: 0;
     bottom: 0;
     
- 
-    
-    
   }
-
 
 
   .nav-menu ul li {
@@ -1071,7 +1067,7 @@ header {
     height: 150vh;
     opacity: 90%;
     transition: all .1s;
-    
+    background: #000000;
   }
 
   #check:not(:checked) ~ ul {
