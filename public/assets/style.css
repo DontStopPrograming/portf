@@ -656,6 +656,60 @@ header {
 /* THIS IS RESPONSIVE 768 */ /* THIS IS RESPONSIVE 768 */  /* THIS IS RESPONSIVE 768 */  /* THIS IS RESPONSIVE 768 */ 
 
 @media (max-width: 768px){
+
+  .nav-menu ul li a {
+    color: rgb(99, 102, 241);
+  }
+  
+  .logo-header img {
+    width: 50px;
+  }
+  
+  
+  
+  .nav-menu ul {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    margin-right: 1.5rem;
+  }
+  
+  .nav-menu li:last-child {
+    background: #c30404;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+  }
+  
+  .nav-menu a:hover {
+    color: green;
+  }
+  
+  .nav-menu li:last-child {
+    background: rgb(255, 255, 255);
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+  }
+  
+  .nav-menu li:last-child:hover {
+    background: transparent;
+    
+  }
+  
+  
+  .menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+  }
+  
+  .menu-icon, #check {
+    display: none;
+    
+  }
+  
+
   section h1 {
     font-size: 2rem;
   }
