@@ -1631,6 +1631,9 @@ header {
 
 /* THIS IS MEDIA 500  THIS IS MEDIA 500    500   500   500 */
 @media screen and (max-width: 500px){
+  section {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
   section h1 {
     font-size: 2rem;
   }
