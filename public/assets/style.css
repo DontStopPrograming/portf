@@ -1493,7 +1493,7 @@ header {
     display: block;
     position: fixed;
     top: auto;
-    right: auto;
+    left: 70%;
     cursor: pointer;
   }
 
@@ -1501,7 +1501,7 @@ header {
     display: block;
     position: fixed;
     top: 70px;
-    left: -70%;
+    left: -50%;
     width: 50%;
     height: 100vh;
     right: 0;
