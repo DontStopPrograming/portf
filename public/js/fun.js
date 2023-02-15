@@ -1,23 +1,23 @@
-const tech = document.getElementById('techIMG')
-const techp1 = document.getElementById('p1')
-const techp11 = document.getElementById('p11')
-const techp12 = document.getElementById('p12')
-const techp2 = document.getElementById('p2')
-const techp3 = document.getElementById('p3')
+const itemH = document.querySelector('#item-html')
+const itemC = document.querySelector('#item-css')
+const itemJ = document.querySelector('#item-js')
+const itemS = document.querySelector('#item-sass')
+const itemB = document.querySelector('#item-boos')
+const itemG = document.querySelector('#item-git')
+const itemM = document.querySelector('#item-mongo')
+const itemSQ = document.querySelector('#item-sql')
+const itemR = document.querySelector('#item-react')
+const itemA = document.querySelector('#item-aws')
+const itemT = document.querySelector('#item-type')
 
  const chargeImg = (input, observation) => {
      console.log('Mostrando')
      input.forEach((input) => {
          if(!input.isIntersecting){
              
-             
-            } else {
-             input.target.classList.add('theTechnologiesImg')
-             input.target.classList.add('theP1')
-             input.target.classList.add('theP11')
-             input.target.classList.add('theP12')
-             input.target.classList.add('theP2')
-             input.target.classList.add('theP3')
+        } else {
+            input.target.classList.add('active')
+            
          }
      })
  }
@@ -28,13 +28,17 @@ const obs = new IntersectionObserver(chargeImg, {
      threshold: 1
  })
 
-obs.observe(tech)
-obs.observe(techp1)
-obs.observe(techp11)
-obs.observe(techp12)
-obs.observe(techp2)
-obs.observe(techp3)
-
+obs.observe(itemH)
+obs.observe(itemC)
+obs.observe(itemJ)
+obs.observe(itemS)
+obs.observe(itemB)
+obs.observe(itemG)
+obs.observe(itemM)
+obs.observe(itemSQ)
+obs.observe(itemR)
+obs.observe(itemA)
+obs.observe(itemT)
 
 const btnSwitch = document.querySelector('#switch')
 
