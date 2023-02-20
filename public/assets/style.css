@@ -1450,8 +1450,8 @@ header {
     grid-area: data-projects;
     text-align: left;
 
-    margin-top: -100%;
-    margin-left: 50px;
+    margin-top: 0;
+    margin-left: 20px;
   }
     
   .example-container {
@@ -1460,7 +1460,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: -230%;
+    margin-top: -500px;
 
     margin-left: -70%;
     
