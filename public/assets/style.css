@@ -500,8 +500,8 @@ header {
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: 
         '. data-cont .'
-        'address phone formul'
-        'email location formul';
+        'address phone formulario'
+        'email location formulario';
       }
 
     .data-cont {
@@ -546,7 +546,7 @@ header {
     } 
     
     #formulario {
-      grid-area: formul;
+      grid-area: formulario;
       width: 800px;
       height:600px;
       background-color: rgb(15, 23, 42);
@@ -1237,9 +1237,9 @@ header {
       'data-cont data-cont'
       'address phone'
       'email location' 
-      'formul formul'
-      'formul formul'; 
-      
+      'formulario formulario'
+      'formulario formulario'; 
+    
   }
 
   .data-cont {
@@ -1272,9 +1272,9 @@ header {
   }
 
   #formulario {
-    grid-area: formul;
-    width: 420px;
-    height:500px;
+    grid-area: formulario;
+    width: 300px;
+    height:300px;
     background-color: rgb(15, 23, 42);
 
   }
