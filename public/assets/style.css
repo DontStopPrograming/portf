@@ -1460,16 +1460,16 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: -200%;
+    margin-top: -230%;
 
-    margin-left: -60%;
+    margin-left: -70%;
     
   }
   
   .example {
     background-color: lightgray;
     border: 1px solid black;
-    width: 200px;
+    width: 170px;
     height: 150px;
     border-radius: 20px 0px 20px 0px;
     
