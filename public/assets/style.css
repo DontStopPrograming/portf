@@ -1450,7 +1450,7 @@ header {
     grid-area: data-projects;
     text-align: left;
 
-    margin-top: 50%;
+    margin-top: 20%;
     margin-left: 20px;
   }
     
@@ -1462,7 +1462,7 @@ header {
     gap: 5px;
     margin-top: 50%;
 
-    margin-left: 20px;
+    margin-left: 10px;
     
   }
   
