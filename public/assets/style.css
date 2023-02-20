@@ -1450,7 +1450,7 @@ header {
     grid-area: data-projects;
     text-align: left;
 
-    margin-top: 20%;
+    margin-top: 0;
     margin-left: 20px;
   }
     
@@ -1460,9 +1460,9 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: 50%;
-
-    margin-left: 10px;
+    margin-top: -100%;
+    
+    margin-left: -80%;
     
   }
   
