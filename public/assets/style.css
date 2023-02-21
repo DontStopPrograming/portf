@@ -1441,7 +1441,7 @@ header {
       "data-projects"
       "example-container";
     
-    margin-left: 0;
+    margin-left: 60%;
     margin-top: 0;
   }
 
@@ -1451,7 +1451,7 @@ header {
     text-align: left;
 
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 0;
   }
     
   .example-container {
@@ -1460,9 +1460,10 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: 20x;
+    margin-top: -500px;
 
-    margin-left: 10px;
+    margin-left: -50%;
+    margin-bottom: 0;
     
   }
   
