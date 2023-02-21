@@ -1239,14 +1239,16 @@ header {
 
   .container-contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-      'data-cont data-cont'
-      'address phone'
-      'email location' 
-      'formulario .';
-      
+      'data-cont'
+      'address'
+      'phone'
+      'email' 
+      'location' 
+      'formulario';
+
     
   }
 
@@ -1254,7 +1256,8 @@ header {
     grid-area: data-cont;
     padding: 0;
 
-    margin-top: 0;
+    margin: -50px;
+    margin-top: 20px;
     margin-left: 0;
   }
   
@@ -1287,12 +1290,12 @@ header {
 
   #formulario {
     grid-area: formulario;
-    width: 120px;
+    width: 100%;
     height:120px;
     background-color: rgb(15, 23, 42);
 
-    
-    margin-left: -22%;
+    margin-top: 20px;
+    margin-left: 0;
   }
 
   #formulario input{
@@ -1301,15 +1304,16 @@ header {
     border:1px solid #fff;
     
     margin: 20px;
+    margin-top: 20px;
   }
 
   #formulario .botonLogin {
     background: #002b82;
     border: 1px solid #000000;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 0;
 
-    margin-top: 10%;
+    margin-top: 40%;
     }
 
   #formulario a {
