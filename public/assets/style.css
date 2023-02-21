@@ -1273,8 +1273,8 @@ header {
 
   #formulario {
     grid-area: formulario;
-    width: 300px;
-    height:300px;
+    width: 150px;
+    height:150px;
     background-color: rgb(15, 23, 42);
 
   }
@@ -1460,9 +1460,9 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: 50%;
+    margin-top: 20x;
 
-    margin-left: 10%;
+    margin-left: 10px;
     
   }
   
