@@ -1465,8 +1465,8 @@ header {
       "data-projects"
       "example-container";
     
-    margin-left: 60%;
-    margin-top: 0;
+    margin-left: 50%;
+    margin-top: -50px;
   }
 
  
@@ -1486,7 +1486,7 @@ header {
     gap: 5px;
     margin-top: -500px;
 
-    margin-left: -50%;
+    margin-left: -60%;
     margin-bottom: 0;
     
   }
