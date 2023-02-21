@@ -1484,7 +1484,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 5px;
-    margin-top: 20%;
+    margin-top: -30%;
 
     margin-left: -60%;
     margin-bottom: 0;
