@@ -508,6 +508,8 @@ header {
       grid-area: data-cont;
       margin-top: 100px;
       
+      margin-top: 0;
+      margin-left: 0;
     }
 
     .data-contact {
@@ -551,6 +553,7 @@ header {
       height:600px;
       background-color: rgb(15, 23, 42);
       
+      margin-left: 0;
     }
 
     #formulario input{
@@ -558,6 +561,9 @@ header {
       border:1px solid #fff;
       font-size: 3rem;
       color: #fff;
+
+      margin: 0;
+    
     }
   
     #formulario .botonLogin {
@@ -565,6 +571,8 @@ header {
       border: 1px solid #000000;
       color: #fff;
       margin-left: -80%;
+
+      margin-top: 0;
       }
   
     #formulario a {
@@ -1232,28 +1240,34 @@ header {
   .container-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
       'data-cont data-cont'
       'address phone'
       'email location' 
-      'formulario formulario'
-      'formulario formulario'; 
+      'formulario .';
+      
     
   }
 
   .data-cont {
     grid-area: data-cont;
-    padding: 40px 40px;
+    padding: 0;
+
+    margin-top: 0;
+    margin-left: 0;
   }
   
   .data-contact {
     border:rgba(0, 0, 0, 0.3);
-    width: 180px;
+    width: 90%;
     height:100px;
     display: grid;
     place-items: center;
     background: rgb(99, 102, 241);
+
+    margin-left: -12%;
+    
   }
 
   .data-contact input {
@@ -1273,10 +1287,12 @@ header {
 
   #formulario {
     grid-area: formulario;
-    width: 150px;
-    height:150px;
+    width: 120px;
+    height:120px;
     background-color: rgb(15, 23, 42);
 
+    
+    margin-left: -22%;
   }
 
   #formulario input{
@@ -1284,19 +1300,23 @@ header {
     font-size: 2rem;
     border:1px solid #fff;
     
+    margin: 20px;
   }
 
   #formulario .botonLogin {
     background: #002b82;
     border: 1px solid #000000;
     color: #fff;
-    margin-left: -50%;
+    margin-left: 20px;
+
+    margin-top: 10%;
     }
 
   #formulario a {
     color: #0143c7;
-    
-  }
+
+    margin-left: 0;
+    }
   
   
   .container-services {
