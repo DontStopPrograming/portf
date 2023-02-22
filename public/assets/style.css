@@ -1269,13 +1269,13 @@ header {
   
   .data-contact {
     
-    width: 100%;
+    width: 90%;
     height:90%;
     display: grid;
     /* place-items: center; */
     background: rgb(99, 102, 241);
     
-    margin-left: 20px;
+    margin-left: 5px;
     font-size: 1rem;
     
    
@@ -1291,7 +1291,7 @@ header {
 
   .data-contact .button {
     margin-top: 10px;
-    margin-left: 50%;
+    margin-left: 10px;
 
    
   }
@@ -1320,7 +1320,7 @@ header {
     
     margin: 20px;
     margin-top: 20px;
-    
+    margin-left: -10%;
     
   }
 
@@ -1328,7 +1328,7 @@ header {
     background: #002b82;
     border: 1px solid #000000;
     color: #fff;
-    margin-left: 50%;
+    margin-left: 10px;
 
     width: 100%;
     margin-top: 20px;
@@ -1364,12 +1364,11 @@ header {
 
     .data-design,
     .data-development,
-    
     .data-seo,
     .data-uiux {
       text-align: center;
-      width: 200px;
-      height: 200px;
+      width: 100%;
+      height: 100%;
       
     }
 
@@ -1381,7 +1380,7 @@ header {
     .data-design p {
       display: block;
       font-size: 14px;
-      text-align: center;
+      text-align: left;
       margin-top: 50px;
       
     }
