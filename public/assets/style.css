@@ -21,12 +21,13 @@ webkit-scrollbar {
 }
 
 section h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color:rgb(203, 213, 225);
+  
 }
 
 section p {
-  
+  font-size: 1rem;
   color:rgb(203, 213, 225);
 }
 
@@ -216,7 +217,7 @@ header {
   
     .data-image img {
       width: 100%;
-      height: 700px;
+      height: 550px;
       border-radius: 20px 5px 20px 5px;
       border:1px solid rgb(203, 213, 225);
       object-fit: contain;
@@ -246,7 +247,7 @@ header {
       grid-template-areas:
         none;
 
-      margin-left: 110%;
+      margin-left: 450%;
       margin-top: 0;
       
     }
@@ -256,7 +257,7 @@ header {
       text-align: left;
       
       margin-top: 0;
-      margin-left: 0;
+      margin-left: 50%;
     }
   
     .example-container {
@@ -348,7 +349,10 @@ header {
       grid-template-rows: auto;
       grid-gap: 10px;
       
+      margin-top: -25%;
     }
+
+    
 
     .data-skills .grid-item.active {
       opacity: 1;
@@ -461,6 +465,8 @@ header {
     .data-seo,
     .data-uiux {
       text-align: center;
+      
+      padding: 10px;
       width: 500px;
       height: 300px;
       
@@ -496,7 +502,7 @@ header {
     
     .container-contact {
       display: grid;
-      grid-template-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: 
         '. data-cont .'
@@ -506,10 +512,11 @@ header {
 
     .data-cont {
       grid-area: data-cont;
-      margin-top: 50%;
+      margin-top: 80px;
       padding: 0;
       
-      margin-left: -94%;
+      
+      margin-left: 40%;
     }
 
     .data-contact {
@@ -520,17 +527,19 @@ header {
       display: grid;
       place-items: center;
 
-      
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.5);      
+      border-radius: 10px;
     }
 
     #address {
       grid-area: address;
-      background-color: rgb(99, 102, 241);
+      
     } 
     
     #phone {
       grid-area: phone;
-      background-color: rgb(99, 102, 241);
+      
       
     }
 
@@ -540,12 +549,12 @@ header {
     
     #email {
       grid-area: email;
-      background-color: rgb(99, 102, 241);
+      
     }
     
     #location {
       grid-area: location;
-      background-color: rgb(99, 102, 241);
+      
     } 
     
     #formulario {
@@ -934,6 +943,7 @@ header {
     padding: 20px;
     place-items: center;
     
+    
   }
 
   
@@ -1212,9 +1222,48 @@ header {
     color: rgb(203, 213, 225);
   }
 
+  .data-skills {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    
+    margin-top: -130%;
+    padding: 20px;
+  }
+
+
   .projects {
     background: #fff;
     color: rgb(203, 213, 225);
+  }
+
+  .data-projects {
+    grid-area: data-projects;
+    text-align: left;
+    
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .container-projects {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: auto none;
+    grid-template-areas:
+      "data-projects"
+      "example-container";
+    
+  }
+
+  .data-projects {
+    grid-area: data-projects;
+    text-align: center;
+    
+    display: grid;
+    place-items: center;
+    margin-top: 0;
+    margin-left: 50%;
   }
 
   #home {
@@ -1260,10 +1309,10 @@ header {
 
   .data-cont {
     grid-area: data-cont;
-    padding: 0;
-
-    margin: -50px;
-    margin-top: 20px;
+    padding: 20px;
+    
+    margin: 0;
+    margin-top: 0;
     margin-left: 20px;
   }
   
@@ -1271,14 +1320,14 @@ header {
     
     width: 80%;
     height:60%;
-    display: grid;
-    /* place-items: center; */
+    /* display: grid;
+    place-items: center; */
     background: rgb(99, 102, 241);
     
     margin-left: 5px;
     font-size: 1rem;
     padding: 20px;
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .data-contact input {
@@ -1353,7 +1402,7 @@ header {
       'data-seo data-uiux';
       
     grid-gap: 10px;
-    padding: 10px;
+    padding: 20px;
     place-items: center;
     color:rgb(203, 213, 225);
     
@@ -1367,10 +1416,11 @@ header {
     .data-development,
     .data-seo,
     .data-uiux {
-      text-align: center;
-      width: 100%;
+      
+      width: 90%;
       height: 100%;
       
+      padding: 0;
       }
 
     .data-design{
@@ -1381,7 +1431,7 @@ header {
     .data-design p {
       display: block;
       font-size: 14px;
-      text-align: center;
+      text-align: left;
       margin-top: 20px;
       
       padding: 10px;
@@ -1395,7 +1445,7 @@ header {
     .data-development p {
       display: block;
       font-size: 14px;
-      text-align: center;
+      text-align: left;
       margin-top: 30px;
 
       padding: 10px;
@@ -1406,7 +1456,7 @@ header {
     .data-app p {
       display: block;
       font-size: 14px;
-      text-align: center;
+      text-align: left;
       margin-top: 20px;
       
       padding: 10px;
@@ -1420,8 +1470,8 @@ header {
     .data-seo p {
       display: block;
       font-size: 14px;
-      text-align: center;
-      margin-top: 20px;
+      text-align: left;
+      margin-top: 10px;
       
       padding: 10px;
       
@@ -1434,20 +1484,21 @@ header {
     .data-uiux p {
       display: block;
       font-size: 14px;
-      text-align: center;
-      margin-top: 20px;
+      text-align: left;
+      margin-top: 5px;
       
       padding: 10px;
       
     }
   
-  .container-skills {
-    display: grid;
-    padding: 20px;
-    place-items: center;
     
-  }
+    .container-skills {
+      display: grid;
+      padding: 20px;
+      place-items: center;
+ }
 
+    
   
   .grid-item {
     background-color: #fff;
