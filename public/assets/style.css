@@ -1376,7 +1376,7 @@ header {
     width: 100%;
     margin: 20px;
     margin-top: 20px;
-    margin-left: -5px;
+    margin-left: -20px;
     
   }
 
@@ -1384,7 +1384,7 @@ header {
     background: #002b82;
     border: 1px solid #000000;
     color: #fff;
-    margin-left: 10px;
+    margin-left: -20%;
 
     width: 100%;
     margin-top: 20px;
@@ -1394,7 +1394,7 @@ header {
   #formulario a {
     color: #0143c7;
 
-    margin-left: 0;
+    margin-left: -30%;
     }
 
     
@@ -1540,7 +1540,8 @@ header {
     font-size: 1rem;
     cursor: pointer;
     margin-top: 20px;
-  }
+
+    }
 
   .container-projects {
     display: grid;
