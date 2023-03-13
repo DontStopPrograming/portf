@@ -493,6 +493,39 @@ header {
       background-color: rgb(99, 102, 241);
     }
 
+    /* ABOUT                              ABOUT */
+
+    .about {
+      display: grid;
+      place-items: center;
+      
+    }
+
+  
+    .image-about {
+      margin-left: 52%;
+      margin-top: 10px;
+    }
+
+    .image-about img {
+      
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      
+    }
+
+    .container-me {
+      margin-top: -50%;
+    }
+
+    .about p {
+        font-size: 21px;
+        
+      }
+    
+
+
     /* CONTACT           ONTACT*/  
 
     .contact {
@@ -684,6 +717,29 @@ header {
 /* THIS IS RESPONSIVE 769 */ /* THIS IS RESPONSIVE 769 */  /* THIS IS RESPONSIVE 769 */  /* THIS IS RESPONSIVE 769 */ 
 
 @media (max-width: 769px){
+
+  
+  .image-about {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+
+  .image-about img {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+  }
+
+  .container-me {
+    margin-top: 10px;
+  }
+
+  .about p {
+      font-size: 21px;
+      
+    }
 
   .nav-menu ul li a {
     color: rgb(99, 102, 241);
