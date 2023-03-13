@@ -721,7 +721,7 @@ header {
   
   .image-about {
     margin-left: 5%;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .image-about img {
@@ -737,7 +737,7 @@ header {
   }
 
   .about p {
-      font-size: 21px;
+      font-size: 15px;
       
     }
 
