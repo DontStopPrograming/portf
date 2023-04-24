@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- comentario -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sassy+Frass&family=Unbounded:wght@500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -175,15 +178,15 @@
             </div>
 
             <div class = "data-design">
-              <i> <img src="/public/image/design.png" alt=""></i> 
+              <img src="/public/image/design.png" alt="">
               <h2>Web Design</h2>
               <p>Let's agree on the best visual appearance of your site</p>
             </div>
 
-            <div class = "data-development"> <i> <img src= "/public/image/development.png" alt=""></i> <h2> Web Development</h2><p>Creation and maintenance of websites and web applications</p></div>
+            <div class = "data-development"> <img src= "/public/image/development.png" alt=""><h2> Web Development</h2><p>Creation and maintenance of websites and web applications</p></div>
             <!-- <div class = "data-app"> <i> <img src="/public/image/app.png" alt=""></i> <h2> App Development</h2> <p>Planning, design, development, testing and launch of an application.</p></div> -->
-            <div class = "data-seo"> <i> <img src="/public/image/seo.png" alt=""></i> <h2> SEO</h2><p>The best search engine according to your requirements</p></div>
-            <div class = "data-uiux"> <i> <img src="/public/image/uiux.png" alt=""></i> <h2> UI/UX</h2><p> Let me evaluate you the best functionality</p></div>
+            <div class = "data-seo"> <img src="/public/image/seo.png" alt=""> <h2> SEO</h2><p>The best search engine according to your requirements</p></div>
+            <div class = "data-uiux"> <img src="/public/image/uiux.png" alt=""> <h2> UI/UX</h2><p> Let me evaluate you the best functionality</p></div>
           </div>
         </section>
 
@@ -194,11 +197,11 @@
               <h1>About me</h1>
             </div>
 
-            <div class = "image-about">
+            <div class = "image-about" data-aos="fade-left">
               <img src="/public/image/pc.jpg" alt="">
             </div>
 
-            <div class = "container-me">
+            <div class = "container-me" data-aos="fade-down">
               <p>I am a freelance fullstack oriented developer, eager to learn more every day. </p>
               <p>I love technology but also nature, sports and videogames.</p>
               <p>Since I was little I liked videogames I think that since I got to know videogames I had an interest in how technology advances.</p>
@@ -415,5 +418,12 @@
         </script> 
 
     <script src="https://kit.fontawesome.com/f52e7a0686.js" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 50,
+      });
+    </script>
 </body>
 </html>
