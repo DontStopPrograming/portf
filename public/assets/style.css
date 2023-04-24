@@ -755,22 +755,29 @@ header {
       
       font-size: 2rem;
     }
-  
+
     #formSend input {
-      margin-top: -50%;
+      margin-top: -20%;
       margin-left: 10%;
       font-size: 2rem;
-    }
-  
+    } 
+
     #formSend #mensaje {
-      margin-top: -50%;
-      margin-left: -50%;
-    }
-  
-    #formSend #company {
       margin-top: -10%;
       margin-left: -50%;
     }
+
+    #formSend textarea {
+      margin-top: -20%;
+    }
+  
+    #formSend #company {
+      margin-top: 10%;
+      margin-left: -50%;
+    }
+
+   
+
   
     #formSend .btn {
       background: #002d86;
